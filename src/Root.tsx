@@ -5,7 +5,6 @@ import {
   Audio,
   staticFile,
 } from "remotion";
-import { BgMesh } from "./components/BgMesh";
 import { GrainOverlay } from "./components/GrainOverlay";
 import { CaptionsHighlighter } from "./components/CaptionsHighlighter";
 import { HookScene } from "./scenes/HookScene";
@@ -26,27 +25,27 @@ const MainComposition: React.FC = () => {
         overflow: "hidden",
       }}
     >
-      {/* Layer 1: Ambient Starfield & Grid Mesh */}
-      <BgMesh />
-
-      {/* Layer 2 & 3: Sequential Scenes */}
-      <Sequence from={0} durationInFrames={350} name="Hook">
+      {/* Layer 1: Real NASA Footage Sequential Scenes */}
+      <Sequence from={0} durationInFrames={350} name="Hook_RealSun">
         <HookScene />
       </Sequence>
 
-      <Sequence from={350} durationInFrames={350} name="Science">
+      <Sequence from={350} durationInFrames={350} name="Science_RealEarth">
         <ScienceScene />
       </Sequence>
 
-      <Sequence from={700} durationInFrames={400} name="Reveal">
+      <Sequence from={700} durationInFrames={400} name="Reveal_RealVoid">
         <RevealScene />
       </Sequence>
 
-      {/* Layer 4: Voiceover Audio & Word-Synced Captions */}
-      <Audio src={staticFile("narration.mp3")} />
+      {/* Layer 2: Audio Layers (Voice + Cinematic Ambient Synth Drone) */}
+      <Audio src={staticFile("narration.mp3")} volume={1.0} />
+      <Audio src={staticFile("ambient_drone.mp3")} volume={0.25} />
+
+      {/* Layer 3: Synced Word-by-Word Karaoke Subtitles */}
       <CaptionsHighlighter captions={captionsData} />
 
-      {/* Layer 5: Film Grain & Vignette */}
+      {/* Layer 4: Organic Film Grain & Vignette */}
       <GrainOverlay />
     </div>
   );

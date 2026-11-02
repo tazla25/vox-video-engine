@@ -33,6 +33,20 @@ jobs:
       - name: 📦 Install Node Dependencies
         run: npm install
 
+      - name: 🎬 Fetch Real NASA 4K/HD Footage
+        run: |
+          mkdir -p public/assets
+          echo "📥 Downloading real NASA scientific footage..."
+          curl -s -L "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4" -o raw_sun.mp4
+          curl -s -L "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02_1080p60.mp4" -o raw_earth.mp4
+          curl -s -L "https://svs.gsfc.nasa.gov/vis/a010000/a013900/a013904/13904_DEEP_IGTV_MP4.mp4" -o raw_void.mp4
+
+          echo "⚙️ Trimming and scaling to 1080x1920 @ 60fps vertical clips..."
+          ffmpeg -y -ss 00:00:02 -t 00:00:08 -i raw_sun.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=60" -c:v libx264 -pix_fmt yuv420p -an public/assets/sun_broll.mp4
+          ffmpeg -y -ss 00:00:00 -t 00:00:08 -i raw_earth.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=60" -c:v libx264 -pix_fmt yuv420p -an public/assets/earth_broll.mp4
+          ffmpeg -y -ss 00:00:05 -t 00:00:09 -i raw_void.mp4 -vf "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=60" -c:v libx264 -pix_fmt yuv420p -an public/assets/void_broll.mp4
+          ls -lh public/assets/
+
       - name: 🎬 Render Remotion Video (16GB RAM Runner)
         run: |
           mkdir -p out
