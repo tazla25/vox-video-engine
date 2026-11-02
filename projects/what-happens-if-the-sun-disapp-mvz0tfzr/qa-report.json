@@ -22,9 +22,9 @@
       "checkName": "Narration Audio File Integrity & Duration",
       "passed": true,
       "status": "PASS",
-      "scoreOrValue": "129.1s",
+      "scoreOrValue": "211.9s",
       "threshold": "> 5.0s",
-      "evidence": "Narration file present and verified via FFprobe (129.1s)",
+      "evidence": "Narration file present and verified via FFprobe (211.9s)",
       "responsibleAgent": "VOICE_DIRECTOR"
     },
     {
@@ -32,9 +32,9 @@
       "checkName": "Acoustic Balance & Clipping Guard",
       "passed": true,
       "status": "PASS",
-      "scoreOrValue": "Peak: -1.8 dB (Mean: -20.5 dB)",
+      "scoreOrValue": "Peak: -2.3 dB (Mean: -20.6 dB)",
       "threshold": "< 0.0 dB True Peak",
-      "evidence": "Verified via FFmpeg volumedetect: Peak is -1.8 dB, zero clipping detected",
+      "evidence": "Verified via FFmpeg volumedetect: Peak is -2.3 dB, zero clipping detected",
       "responsibleAgent": "SOUND_DESIGN"
     },
     {
@@ -62,9 +62,9 @@
       "checkName": "Container Stream Encoding & Resolution Compatibility",
       "passed": true,
       "status": "PASS",
-      "scoreOrValue": "1920x1080",
-      "threshold": "1920x1080",
-      "evidence": "FFprobe verified video stream: Matches target resolution, black frame sections: 0",
+      "scoreOrValue": "1080x1920",
+      "threshold": "1080x1920",
+      "evidence": "FFprobe verified video stream: 1080x1920 matches target 1080x1920, 0 black frames detected",
       "responsibleAgent": "EDITOR_SUBTITLE"
     }
   ],
@@ -101,11 +101,11 @@
         "time_base": "1/90000",
         "start_pts": 0,
         "start_time": "0.000000",
-        "duration_ts": 11646000,
-        "duration": "129.400000",
-        "bit_rate": "3333182",
+        "duration_ts": 19165500,
+        "duration": "212.950000",
+        "bit_rate": "4717978",
         "bits_per_raw_sample": "8",
-        "nb_frames": "7764",
+        "nb_frames": "12777",
         "extradata_size": 51,
         "disposition": {
           "default": 1,
@@ -154,10 +154,10 @@
         "time_base": "1/48000",
         "start_pts": 0,
         "start_time": "0.000000",
-        "duration_ts": 6211584,
-        "duration": "129.408000",
+        "duration_ts": 10222608,
+        "duration": "212.971000",
         "bit_rate": "317374",
-        "nb_frames": "6068",
+        "nb_frames": "9985",
         "extradata_size": 2,
         "disposition": {
           "default": 1,
@@ -187,16 +187,16 @@
       }
     ],
     "format": {
-      "filename": "artifacts/video.mp4",
+      "filename": "/data/data/com.termux/files/home/vox-video-engine/artifacts/video.mp4",
       "nb_streams": 2,
       "nb_programs": 0,
       "nb_stream_groups": 0,
       "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
       "format_long_name": "QuickTime / MOV",
       "start_time": "0.000000",
-      "duration": "129.408000",
-      "size": "59257864",
-      "bit_rate": "3663319",
+      "duration": "212.971000",
+      "size": "134378857",
+      "bit_rate": "5047780",
       "probe_score": 100,
       "tags": {
         "major_brand": "isom",
@@ -210,5 +210,5 @@
   "blackFramesDetected": 0,
   "silenceSectionsDetected": 0,
   "audioClippingDetected": false,
-  "verifiedAt": "2026-11-02T10:15:03.787Z"
+  "verifiedAt": "2026-11-02T11:57:21.803Z"
 }

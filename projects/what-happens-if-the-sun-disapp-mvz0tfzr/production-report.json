@@ -32,5 +32,23 @@
     "timeline": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/timeline.json",
     "qaReport": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/qa-report.json"
   },
-  "summary": "Pre-production and visual composition successfully completed across 14 specialist roles. Overall QA status: PASSED. Project has been formally APPROVED by human creator at 2026-11-02T08:55:45.562Z. Cloud rendering authorized."
+  "summary": "Pre-production and visual composition successfully completed across 14 specialist roles. Overall QA status: PASSED. Project has been formally APPROVED by human creator at 2026-11-02T08:55:45.562Z. Cloud rendering authorized.",
+  "metrics": {
+    "totalFrames": 12777,
+    "actualDurationSeconds": 212.95,
+    "resolution": "1080x1920",
+    "fps": 60,
+    "videoFileSizeMb": 134.4,
+    "artifactRunId": 41435875957
+  },
+  "lastRenderVerification": {
+    "verifiedAt": "2026-11-02T11:57:21.868Z",
+    "runId": 41435875957,
+    "durationSeconds": 212.971,
+    "resolution": "1080x1920",
+    "videoCodec": "h264",
+    "audioCodec": "aac",
+    "fileSizeBytes": 134378857,
+    "artifactUrl": "https://github.com/tazla25/vox-video-engine/actions/runs/41435875957/artifacts/13139026048"
+  }
 }
