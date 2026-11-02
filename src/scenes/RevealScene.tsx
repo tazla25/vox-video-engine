@@ -1,7 +1,7 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig, interpolate } from "remotion";
-import { THEME, getSpringValue } from "../theme.js";
-import { KineticText } from "../components/KineticText.js";
+import { THEME, getSpringValue } from "../theme";
+import { KineticText } from "../components/KineticText";
 
 export const RevealScene: React.FC = () => {
   const frame = useCurrentFrame();

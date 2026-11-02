@@ -1,6 +1,6 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
-import { THEME } from "../theme.js";
+import { THEME } from "../theme";
 
 export const BgMesh: React.FC<{ glowColor?: string }> = ({
   glowColor = THEME.colors.bgMeshGlow,

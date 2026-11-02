@@ -5,12 +5,12 @@ import {
   Audio,
   staticFile,
 } from "remotion";
-import { BgMesh } from "./components/BgMesh.js";
-import { GrainOverlay } from "./components/GrainOverlay.js";
-import { CaptionsHighlighter } from "./components/CaptionsHighlighter.js";
-import { HookScene } from "./scenes/HookScene.js";
-import { ScienceScene } from "./scenes/ScienceScene.js";
-import { RevealScene } from "./scenes/RevealScene.js";
+import { BgMesh } from "./components/BgMesh";
+import { GrainOverlay } from "./components/GrainOverlay";
+import { CaptionsHighlighter } from "./components/CaptionsHighlighter";
+import { HookScene } from "./scenes/HookScene";
+import { ScienceScene } from "./scenes/ScienceScene";
+import { RevealScene } from "./scenes/RevealScene";
 
 // Import word captions
 import captionsData from "../public/captions.json";

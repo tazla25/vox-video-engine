@@ -1,6 +1,6 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
-import { THEME } from "../theme.js";
+import { THEME } from "../theme";
 
 interface WordCaption {
   word: string;

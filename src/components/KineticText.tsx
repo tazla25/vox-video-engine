@@ -1,6 +1,6 @@
 import React from "react";
 import { useCurrentFrame, useVideoConfig } from "remotion";
-import { THEME, getSpringValue } from "../theme.js";
+import { THEME, getSpringValue } from "../theme";
 
 interface KineticTextProps {
   text: string;
