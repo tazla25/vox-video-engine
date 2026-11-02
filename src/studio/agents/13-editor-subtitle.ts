@@ -19,12 +19,26 @@ export class EditorAndSubtitleAgent implements IAgent<{ storyboard: StoryboardTy
     const width = context.config.resolution.width;
     const height = context.config.resolution.height;
 
+    // Calibrate timeline frame duration against real narration audio
+    const actualNarrationSeconds = input.audioManifest?.narration?.durationSeconds;
+    const storyboardTotalSeconds = input.storyboard.totalDurationSeconds || 1;
+    // Scale shot durations proportionally to frame-lock to audio length (+ 1.0s outro padding)
+    const targetVideoDurationSeconds = (actualNarrationSeconds && actualNarrationSeconds > 2)
+      ? actualNarrationSeconds + 1.0
+      : storyboardTotalSeconds;
+    const durationScaleFactor = targetVideoDurationSeconds / storyboardTotalSeconds;
+
+    context.logger.info(
+      `Calibrating timeline: Storyboard estimate=${storyboardTotalSeconds.toFixed(1)}s, Actual narration=${actualNarrationSeconds?.toFixed(1) || 'N/A'}s, Target timeline=${targetVideoDurationSeconds.toFixed(1)}s (scale=${durationScaleFactor.toFixed(3)})`
+    );
+
     let currentFrame = 0;
     const clips = [];
 
     for (const scene of input.storyboard.scenes) {
       for (const shot of scene.shots) {
-        const shotDurationFrames = Math.max(1, Math.round(shot.durationSeconds * fps));
+        const calibratedShotDurationSeconds = shot.durationSeconds * durationScaleFactor;
+        const shotDurationFrames = Math.max(1, Math.round(calibratedShotDurationSeconds * fps));
         
         let assetRef = 'public/assets/sun_broll.mp4';
         if (shot.visualObjective.toLowerCase().includes('earth')) {

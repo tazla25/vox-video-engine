@@ -1,1 +1,1502 @@
-[]
+[
+  {
+    "word": "Right",
+    "startMs": 100.0,
+    "endMs": 400.0
+  },
+  {
+    "word": "now",
+    "startMs": 412.5,
+    "endMs": 762.5
+  },
+  {
+    "word": "as",
+    "startMs": 937.5,
+    "endMs": 1162.5
+  },
+  {
+    "word": "you",
+    "startMs": 1175.0,
+    "endMs": 1287.5
+  },
+  {
+    "word": "listen",
+    "startMs": 1300.0,
+    "endMs": 1600.0
+  },
+  {
+    "word": "to",
+    "startMs": 1612.5,
+    "endMs": 1700.0
+  },
+  {
+    "word": "my",
+    "startMs": 1712.5,
+    "endMs": 1862.5
+  },
+  {
+    "word": "voice",
+    "startMs": 1875.0,
+    "endMs": 2387.5
+  },
+  {
+    "word": "the",
+    "startMs": 2587.5,
+    "endMs": 2712.5
+  },
+  {
+    "word": "Sun",
+    "startMs": 2725.0,
+    "endMs": 3112.5
+  },
+  {
+    "word": "could",
+    "startMs": 3125.0,
+    "endMs": 3262.5
+  },
+  {
+    "word": "have",
+    "startMs": 3275.0,
+    "endMs": 3387.5
+  },
+  {
+    "word": "vanished",
+    "startMs": 3400.0,
+    "endMs": 3825.0
+  },
+  {
+    "word": "completely",
+    "startMs": 3837.5,
+    "endMs": 4387.5
+  },
+  {
+    "word": "from",
+    "startMs": 4400.0,
+    "endMs": 4550.0
+  },
+  {
+    "word": "the",
+    "startMs": 4562.5,
+    "endMs": 4637.5
+  },
+  {
+    "word": "cosmos",
+    "startMs": 4650.0,
+    "endMs": 5400.0
+  },
+  {
+    "word": "And",
+    "startMs": 6262.5,
+    "endMs": 6437.5
+  },
+  {
+    "word": "you",
+    "startMs": 6450.0,
+    "endMs": 6575.0
+  },
+  {
+    "word": "would",
+    "startMs": 6587.5,
+    "endMs": 6675.0
+  },
+  {
+    "word": "have",
+    "startMs": 6687.5,
+    "endMs": 6825.0
+  },
+  {
+    "word": "absolutely",
+    "startMs": 6837.5,
+    "endMs": 7537.5
+  },
+  {
+    "word": "no",
+    "startMs": 7550.0,
+    "endMs": 7812.5
+  },
+  {
+    "word": "idea",
+    "startMs": 7825.0,
+    "endMs": 8350.0
+  },
+  {
+    "word": "For",
+    "startMs": 9212.5,
+    "endMs": 9512.5
+  },
+  {
+    "word": "eight",
+    "startMs": 9525.0,
+    "endMs": 9687.5
+  },
+  {
+    "word": "minutes",
+    "startMs": 9700.0,
+    "endMs": 10050.0
+  },
+  {
+    "word": "and",
+    "startMs": 10062.5,
+    "endMs": 10162.5
+  },
+  {
+    "word": "twenty",
+    "startMs": 10175.0,
+    "endMs": 10475.0
+  },
+  {
+    "word": "seconds",
+    "startMs": 10487.5,
+    "endMs": 11037.5
+  },
+  {
+    "word": "the",
+    "startMs": 11187.5,
+    "endMs": 11312.5
+  },
+  {
+    "word": "sky",
+    "startMs": 11325.0,
+    "endMs": 11712.5
+  },
+  {
+    "word": "remains",
+    "startMs": 11725.0,
+    "endMs": 12150.0
+  },
+  {
+    "word": "radiant",
+    "startMs": 12162.5,
+    "endMs": 12650.0
+  },
+  {
+    "word": "children",
+    "startMs": 12900.0,
+    "endMs": 13325.0
+  },
+  {
+    "word": "laugh",
+    "startMs": 13337.5,
+    "endMs": 13625.0
+  },
+  {
+    "word": "in",
+    "startMs": 13637.5,
+    "endMs": 13700.0
+  },
+  {
+    "word": "the",
+    "startMs": 13712.5,
+    "endMs": 13787.5
+  },
+  {
+    "word": "park",
+    "startMs": 13800.0,
+    "endMs": 14187.5
+  },
+  {
+    "word": "and",
+    "startMs": 14425.0,
+    "endMs": 14537.5
+  },
+  {
+    "word": "Earth",
+    "startMs": 14550.0,
+    "endMs": 14800.0
+  },
+  {
+    "word": "continues",
+    "startMs": 14812.5,
+    "endMs": 15337.5
+  },
+  {
+    "word": "its",
+    "startMs": 15350.0,
+    "endMs": 15487.5
+  },
+  {
+    "word": "tranquil",
+    "startMs": 15500.0,
+    "endMs": 15987.5
+  },
+  {
+    "word": "orbit",
+    "startMs": 16000.0,
+    "endMs": 16412.5
+  },
+  {
+    "word": "But",
+    "startMs": 17275.0,
+    "endMs": 17425.0
+  },
+  {
+    "word": "across",
+    "startMs": 17437.5,
+    "endMs": 17825.0
+  },
+  {
+    "word": "the",
+    "startMs": 17837.5,
+    "endMs": 17937.5
+  },
+  {
+    "word": "void",
+    "startMs": 17950.0,
+    "endMs": 18325.0
+  },
+  {
+    "word": "a",
+    "startMs": 18575.0,
+    "endMs": 18637.5
+  },
+  {
+    "word": "silent",
+    "startMs": 18650.0,
+    "endMs": 19112.5
+  },
+  {
+    "word": "countdown",
+    "startMs": 19125.0,
+    "endMs": 19650.0
+  },
+  {
+    "word": "has",
+    "startMs": 19662.5,
+    "endMs": 19850.0
+  },
+  {
+    "word": "already",
+    "startMs": 19862.5,
+    "endMs": 20262.5
+  },
+  {
+    "word": "begun",
+    "startMs": 20275.0,
+    "endMs": 20775.0
+  },
+  {
+    "word": "Why",
+    "startMs": 21637.5,
+    "endMs": 21862.5
+  },
+  {
+    "word": "does",
+    "startMs": 21875.0,
+    "endMs": 22075.0
+  },
+  {
+    "word": "Earth",
+    "startMs": 22087.5,
+    "endMs": 22325.0
+  },
+  {
+    "word": "wait",
+    "startMs": 22337.5,
+    "endMs": 22775.0
+  },
+  {
+    "word": "Because",
+    "startMs": 23637.5,
+    "endMs": 24012.5
+  },
+  {
+    "word": "in",
+    "startMs": 24025.0,
+    "endMs": 24150.0
+  },
+  {
+    "word": "Einstein's",
+    "startMs": 24162.5,
+    "endMs": 24787.5
+  },
+  {
+    "word": "universe",
+    "startMs": 24800.0,
+    "endMs": 25362.5
+  },
+  {
+    "word": "nothing",
+    "startMs": 25575.0,
+    "endMs": 25987.5
+  },
+  {
+    "word": "can",
+    "startMs": 26000.0,
+    "endMs": 26125.0
+  },
+  {
+    "word": "travel",
+    "startMs": 26137.5,
+    "endMs": 26487.5
+  },
+  {
+    "word": "faster",
+    "startMs": 26500.0,
+    "endMs": 26987.5
+  },
+  {
+    "word": "than",
+    "startMs": 27000.0,
+    "endMs": 27125.0
+  },
+  {
+    "word": "the",
+    "startMs": 27137.5,
+    "endMs": 27212.5
+  },
+  {
+    "word": "speed",
+    "startMs": 27225.0,
+    "endMs": 27525.0
+  },
+  {
+    "word": "of",
+    "startMs": 27537.5,
+    "endMs": 27625.0
+  },
+  {
+    "word": "light",
+    "startMs": 27637.5,
+    "endMs": 28037.5
+  },
+  {
+    "word": "Not",
+    "startMs": 28900.0,
+    "endMs": 29187.5
+  },
+  {
+    "word": "even",
+    "startMs": 29200.0,
+    "endMs": 29425.0
+  },
+  {
+    "word": "gravity",
+    "startMs": 29437.5,
+    "endMs": 30050.0
+  },
+  {
+    "word": "The",
+    "startMs": 30912.5,
+    "endMs": 31062.5
+  },
+  {
+    "word": "Sun",
+    "startMs": 31075.0,
+    "endMs": 31400.0
+  },
+  {
+    "word": "is",
+    "startMs": 31412.5,
+    "endMs": 31525.0
+  },
+  {
+    "word": "not",
+    "startMs": 31537.5,
+    "endMs": 31750.0
+  },
+  {
+    "word": "just",
+    "startMs": 31762.5,
+    "endMs": 32012.5
+  },
+  {
+    "word": "our",
+    "startMs": 32025.0,
+    "endMs": 32137.5
+  },
+  {
+    "word": "cosmic",
+    "startMs": 32150.0,
+    "endMs": 32625.0
+  },
+  {
+    "word": "furnace",
+    "startMs": 32637.5,
+    "endMs": 33100.0
+  },
+  {
+    "word": "its",
+    "startMs": 33387.5,
+    "endMs": 33525.0
+  },
+  {
+    "word": "colossal",
+    "startMs": 33537.5,
+    "endMs": 34037.5
+  },
+  {
+    "word": "mass",
+    "startMs": 34050.0,
+    "endMs": 34362.5
+  },
+  {
+    "word": "bends",
+    "startMs": 34375.0,
+    "endMs": 34687.5
+  },
+  {
+    "word": "the",
+    "startMs": 34700.0,
+    "endMs": 34800.0
+  },
+  {
+    "word": "fabric",
+    "startMs": 34812.5,
+    "endMs": 35262.5
+  },
+  {
+    "word": "of",
+    "startMs": 35275.0,
+    "endMs": 35362.5
+  },
+  {
+    "word": "space-time",
+    "startMs": 35375.0,
+    "endMs": 36012.5
+  },
+  {
+    "word": "into",
+    "startMs": 36025.0,
+    "endMs": 36225.0
+  },
+  {
+    "word": "a",
+    "startMs": 36237.5,
+    "endMs": 36337.5
+  },
+  {
+    "word": "deep",
+    "startMs": 36350.0,
+    "endMs": 36612.5
+  },
+  {
+    "word": "gravitational",
+    "startMs": 36625.0,
+    "endMs": 37375.0
+  },
+  {
+    "word": "bowl",
+    "startMs": 37387.5,
+    "endMs": 37750.0
+  },
+  {
+    "word": "For",
+    "startMs": 38612.5,
+    "endMs": 38837.5
+  },
+  {
+    "word": "five",
+    "startMs": 38850.0,
+    "endMs": 39187.5
+  },
+  {
+    "word": "hundred",
+    "startMs": 39200.0,
+    "endMs": 39475.0
+  },
+  {
+    "word": "seconds",
+    "startMs": 39487.5,
+    "endMs": 40050.0
+  },
+  {
+    "word": "Earth",
+    "startMs": 40300.0,
+    "endMs": 40525.0
+  },
+  {
+    "word": "continues",
+    "startMs": 40537.5,
+    "endMs": 41087.5
+  },
+  {
+    "word": "circling",
+    "startMs": 41100.0,
+    "endMs": 41562.5
+  },
+  {
+    "word": "a",
+    "startMs": 41575.0,
+    "endMs": 41650.0
+  },
+  {
+    "word": "ghost",
+    "startMs": 41662.5,
+    "endMs": 42012.5
+  },
+  {
+    "word": "star",
+    "startMs": 42025.0,
+    "endMs": 42537.5
+  },
+  {
+    "word": "Until",
+    "startMs": 43400.0,
+    "endMs": 43762.5
+  },
+  {
+    "word": "the",
+    "startMs": 43775.0,
+    "endMs": 43875.0
+  },
+  {
+    "word": "final",
+    "startMs": 43887.5,
+    "endMs": 44262.5
+  },
+  {
+    "word": "photon",
+    "startMs": 44275.0,
+    "endMs": 44825.0
+  },
+  {
+    "word": "strikes",
+    "startMs": 44837.5,
+    "endMs": 45200.0
+  },
+  {
+    "word": "your",
+    "startMs": 45212.5,
+    "endMs": 45325.0
+  },
+  {
+    "word": "retina",
+    "startMs": 45337.5,
+    "endMs": 45812.5
+  },
+  {
+    "word": "At",
+    "startMs": 46675.0,
+    "endMs": 46937.5
+  },
+  {
+    "word": "eight",
+    "startMs": 46950.0,
+    "endMs": 47112.5
+  },
+  {
+    "word": "minutes",
+    "startMs": 47125.0,
+    "endMs": 47475.0
+  },
+  {
+    "word": "and",
+    "startMs": 47487.5,
+    "endMs": 47587.5
+  },
+  {
+    "word": "twenty",
+    "startMs": 47600.0,
+    "endMs": 47887.5
+  },
+  {
+    "word": "seconds",
+    "startMs": 47900.0,
+    "endMs": 48450.0
+  },
+  {
+    "word": "total",
+    "startMs": 48675.0,
+    "endMs": 48962.5
+  },
+  {
+    "word": "blackout",
+    "startMs": 48975.0,
+    "endMs": 49450.0
+  },
+  {
+    "word": "hits",
+    "startMs": 49462.5,
+    "endMs": 49937.5
+  },
+  {
+    "word": "The",
+    "startMs": 50800.0,
+    "endMs": 50937.5
+  },
+  {
+    "word": "Moon",
+    "startMs": 50950.0,
+    "endMs": 51225.0
+  },
+  {
+    "word": "instantly",
+    "startMs": 51237.5,
+    "endMs": 51750.0
+  },
+  {
+    "word": "disappears",
+    "startMs": 51762.5,
+    "endMs": 52400.0
+  },
+  {
+    "word": "from",
+    "startMs": 52412.5,
+    "endMs": 52550.0
+  },
+  {
+    "word": "the",
+    "startMs": 52562.5,
+    "endMs": 52625.0
+  },
+  {
+    "word": "night",
+    "startMs": 52637.5,
+    "endMs": 52875.0
+  },
+  {
+    "word": "sky",
+    "startMs": 52887.5,
+    "endMs": 53337.5
+  },
+  {
+    "word": "robbed",
+    "startMs": 53612.5,
+    "endMs": 53925.0
+  },
+  {
+    "word": "of",
+    "startMs": 53937.5,
+    "endMs": 54012.5
+  },
+  {
+    "word": "its",
+    "startMs": 54025.0,
+    "endMs": 54175.0
+  },
+  {
+    "word": "reflected",
+    "startMs": 54187.5,
+    "endMs": 54737.5
+  },
+  {
+    "word": "mirror",
+    "startMs": 54750.0,
+    "endMs": 55187.5
+  },
+  {
+    "word": "But",
+    "startMs": 56050.0,
+    "endMs": 56187.5
+  },
+  {
+    "word": "the",
+    "startMs": 56200.0,
+    "endMs": 56312.5
+  },
+  {
+    "word": "dark",
+    "startMs": 56325.0,
+    "endMs": 56637.5
+  },
+  {
+    "word": "is",
+    "startMs": 56650.0,
+    "endMs": 56787.5
+  },
+  {
+    "word": "merely",
+    "startMs": 56800.0,
+    "endMs": 57162.5
+  },
+  {
+    "word": "the",
+    "startMs": 57175.0,
+    "endMs": 57287.5
+  },
+  {
+    "word": "first",
+    "startMs": 57300.0,
+    "endMs": 57625.0
+  },
+  {
+    "word": "blow",
+    "startMs": 57637.5,
+    "endMs": 58062.5
+  },
+  {
+    "word": "Without",
+    "startMs": 58925.0,
+    "endMs": 59337.5
+  },
+  {
+    "word": "the",
+    "startMs": 59350.0,
+    "endMs": 59462.5
+  },
+  {
+    "word": "Sun's",
+    "startMs": 59475.0,
+    "endMs": 59862.5
+  },
+  {
+    "word": "gravitational",
+    "startMs": 59875.0,
+    "endMs": 60675.0
+  },
+  {
+    "word": "anchor",
+    "startMs": 60687.5,
+    "endMs": 61062.5
+  },
+  {
+    "word": "Earth",
+    "startMs": 61262.5,
+    "endMs": 61462.5
+  },
+  {
+    "word": "stops",
+    "startMs": 61475.0,
+    "endMs": 61875.0
+  },
+  {
+    "word": "curving",
+    "startMs": 61887.5,
+    "endMs": 62400.0
+  },
+  {
+    "word": "It",
+    "startMs": 63262.5,
+    "endMs": 63425.0
+  },
+  {
+    "word": "slingshots",
+    "startMs": 63437.5,
+    "endMs": 64112.5
+  },
+  {
+    "word": "in",
+    "startMs": 64125.0,
+    "endMs": 64225.0
+  },
+  {
+    "word": "a",
+    "startMs": 64237.5,
+    "endMs": 64287.5
+  },
+  {
+    "word": "straight",
+    "startMs": 64300.0,
+    "endMs": 64662.5
+  },
+  {
+    "word": "tangential",
+    "startMs": 64675.0,
+    "endMs": 65275.0
+  },
+  {
+    "word": "line",
+    "startMs": 65287.5,
+    "endMs": 65562.5
+  },
+  {
+    "word": "into",
+    "startMs": 65575.0,
+    "endMs": 65800.0
+  },
+  {
+    "word": "deep",
+    "startMs": 65812.5,
+    "endMs": 66075.0
+  },
+  {
+    "word": "space",
+    "startMs": 66087.5,
+    "endMs": 66525.0
+  },
+  {
+    "word": "at",
+    "startMs": 66537.5,
+    "endMs": 66687.5
+  },
+  {
+    "word": "thirty",
+    "startMs": 66700.0,
+    "endMs": 67012.5
+  },
+  {
+    "word": "kilometers",
+    "startMs": 67025.0,
+    "endMs": 67687.5
+  },
+  {
+    "word": "every",
+    "startMs": 67700.0,
+    "endMs": 67950.0
+  },
+  {
+    "word": "single",
+    "startMs": 67962.5,
+    "endMs": 68325.0
+  },
+  {
+    "word": "second",
+    "startMs": 68337.5,
+    "endMs": 68850.0
+  },
+  {
+    "word": "Within",
+    "startMs": 69712.5,
+    "endMs": 70137.5
+  },
+  {
+    "word": "twenty-four",
+    "startMs": 70150.0,
+    "endMs": 70712.5
+  },
+  {
+    "word": "hours",
+    "startMs": 70725.0,
+    "endMs": 71200.0
+  },
+  {
+    "word": "global",
+    "startMs": 71437.5,
+    "endMs": 71812.5
+  },
+  {
+    "word": "panic",
+    "startMs": 71825.0,
+    "endMs": 72175.0
+  },
+  {
+    "word": "collides",
+    "startMs": 72187.5,
+    "endMs": 72662.5
+  },
+  {
+    "word": "with",
+    "startMs": 72675.0,
+    "endMs": 72812.5
+  },
+  {
+    "word": "physics",
+    "startMs": 72825.0,
+    "endMs": 73450.0
+  },
+  {
+    "word": "Photosynthesis",
+    "startMs": 74312.5,
+    "endMs": 75212.5
+  },
+  {
+    "word": "grinds",
+    "startMs": 75225.0,
+    "endMs": 75650.0
+  },
+  {
+    "word": "to",
+    "startMs": 75662.5,
+    "endMs": 75787.5
+  },
+  {
+    "word": "a",
+    "startMs": 75800.0,
+    "endMs": 75900.0
+  },
+  {
+    "word": "dead",
+    "startMs": 75912.5,
+    "endMs": 76175.0
+  },
+  {
+    "word": "stop",
+    "startMs": 76187.5,
+    "endMs": 76675.0
+  },
+  {
+    "word": "Within",
+    "startMs": 77537.5,
+    "endMs": 77950.0
+  },
+  {
+    "word": "seven",
+    "startMs": 77962.5,
+    "endMs": 78300.0
+  },
+  {
+    "word": "days",
+    "startMs": 78312.5,
+    "endMs": 78787.5
+  },
+  {
+    "word": "global",
+    "startMs": 79037.5,
+    "endMs": 79412.5
+  },
+  {
+    "word": "surface",
+    "startMs": 79425.0,
+    "endMs": 79837.5
+  },
+  {
+    "word": "temperatures",
+    "startMs": 79850.0,
+    "endMs": 80337.5
+  },
+  {
+    "word": "plunge",
+    "startMs": 80350.0,
+    "endMs": 80725.0
+  },
+  {
+    "word": "below",
+    "startMs": 80737.5,
+    "endMs": 81062.5
+  },
+  {
+    "word": "freezing",
+    "startMs": 81075.0,
+    "endMs": 81650.0
+  },
+  {
+    "word": "Within",
+    "startMs": 82512.5,
+    "endMs": 82925.0
+  },
+  {
+    "word": "one",
+    "startMs": 82937.5,
+    "endMs": 83150.0
+  },
+  {
+    "word": "year",
+    "startMs": 83162.5,
+    "endMs": 83512.5
+  },
+  {
+    "word": "the",
+    "startMs": 83675.0,
+    "endMs": 83762.5
+  },
+  {
+    "word": "thermometer",
+    "startMs": 83775.0,
+    "endMs": 84400.0
+  },
+  {
+    "word": "reads",
+    "startMs": 84412.5,
+    "endMs": 84737.5
+  },
+  {
+    "word": "minus",
+    "startMs": 84750.0,
+    "endMs": 85150.0
+  },
+  {
+    "word": "seventy-three",
+    "startMs": 85162.5,
+    "endMs": 85762.5
+  },
+  {
+    "word": "degrees",
+    "startMs": 85775.0,
+    "endMs": 86175.0
+  },
+  {
+    "word": "Celsius",
+    "startMs": 86187.5,
+    "endMs": 86950.0
+  },
+  {
+    "word": "The",
+    "startMs": 87812.5,
+    "endMs": 87962.5
+  },
+  {
+    "word": "surface",
+    "startMs": 87975.0,
+    "endMs": 88412.5
+  },
+  {
+    "word": "oceans",
+    "startMs": 88425.0,
+    "endMs": 88875.0
+  },
+  {
+    "word": "freeze",
+    "startMs": 88887.5,
+    "endMs": 89237.5
+  },
+  {
+    "word": "solid",
+    "startMs": 89250.0,
+    "endMs": 89650.0
+  },
+  {
+    "word": "under",
+    "startMs": 89662.5,
+    "endMs": 89887.5
+  },
+  {
+    "word": "kilometers",
+    "startMs": 89900.0,
+    "endMs": 90500.0
+  },
+  {
+    "word": "of",
+    "startMs": 90512.5,
+    "endMs": 90600.0
+  },
+  {
+    "word": "impenetrable",
+    "startMs": 90612.5,
+    "endMs": 91300.0
+  },
+  {
+    "word": "ice",
+    "startMs": 91312.5,
+    "endMs": 91637.5
+  },
+  {
+    "word": "sealing",
+    "startMs": 91925.0,
+    "endMs": 92337.5
+  },
+  {
+    "word": "off",
+    "startMs": 92350.0,
+    "endMs": 92537.5
+  },
+  {
+    "word": "the",
+    "startMs": 92550.0,
+    "endMs": 92650.0
+  },
+  {
+    "word": "world",
+    "startMs": 92662.5,
+    "endMs": 93012.5
+  },
+  {
+    "word": "in",
+    "startMs": 93025.0,
+    "endMs": 93125.0
+  },
+  {
+    "word": "an",
+    "startMs": 93137.5,
+    "endMs": 93275.0
+  },
+  {
+    "word": "icy",
+    "startMs": 93287.5,
+    "endMs": 93612.5
+  },
+  {
+    "word": "crypt",
+    "startMs": 93625.0,
+    "endMs": 94125.0
+  },
+  {
+    "word": "Yet",
+    "startMs": 94987.5,
+    "endMs": 95312.5
+  },
+  {
+    "word": "deep",
+    "startMs": 95487.5,
+    "endMs": 95762.5
+  },
+  {
+    "word": "beneath",
+    "startMs": 95775.0,
+    "endMs": 96150.0
+  },
+  {
+    "word": "that",
+    "startMs": 96162.5,
+    "endMs": 96350.0
+  },
+  {
+    "word": "armor",
+    "startMs": 96362.5,
+    "endMs": 96687.5
+  },
+  {
+    "word": "of",
+    "startMs": 96700.0,
+    "endMs": 96787.5
+  },
+  {
+    "word": "ice",
+    "startMs": 96800.0,
+    "endMs": 97200.0
+  },
+  {
+    "word": "Earth",
+    "startMs": 97425.0,
+    "endMs": 97587.5
+  },
+  {
+    "word": "harbors",
+    "startMs": 97600.0,
+    "endMs": 98012.5
+  },
+  {
+    "word": "a",
+    "startMs": 98025.0,
+    "endMs": 98087.5
+  },
+  {
+    "word": "secret",
+    "startMs": 98100.0,
+    "endMs": 98650.0
+  },
+  {
+    "word": "Geothermal",
+    "startMs": 99512.5,
+    "endMs": 100250.0
+  },
+  {
+    "word": "energy",
+    "startMs": 100262.5,
+    "endMs": 100587.5
+  },
+  {
+    "word": "pulsing",
+    "startMs": 100600.0,
+    "endMs": 101050.0
+  },
+  {
+    "word": "from",
+    "startMs": 101062.5,
+    "endMs": 101200.0
+  },
+  {
+    "word": "our",
+    "startMs": 101212.5,
+    "endMs": 101312.5
+  },
+  {
+    "word": "molten",
+    "startMs": 101325.0,
+    "endMs": 101737.5
+  },
+  {
+    "word": "nickel-iron",
+    "startMs": 101750.0,
+    "endMs": 102300.0
+  },
+  {
+    "word": "core",
+    "startMs": 102312.5,
+    "endMs": 102650.0
+  },
+  {
+    "word": "keeps",
+    "startMs": 102662.5,
+    "endMs": 102975.0
+  },
+  {
+    "word": "the",
+    "startMs": 102987.5,
+    "endMs": 103125.0
+  },
+  {
+    "word": "deep",
+    "startMs": 103137.5,
+    "endMs": 103375.0
+  },
+  {
+    "word": "abyssal",
+    "startMs": 103387.5,
+    "endMs": 103837.5
+  },
+  {
+    "word": "oceans",
+    "startMs": 103850.0,
+    "endMs": 104262.5
+  },
+  {
+    "word": "liquid",
+    "startMs": 104275.0,
+    "endMs": 104625.0
+  },
+  {
+    "word": "and",
+    "startMs": 104637.5,
+    "endMs": 104762.5
+  },
+  {
+    "word": "warm",
+    "startMs": 104775.0,
+    "endMs": 105200.0
+  },
+  {
+    "word": "Clustering",
+    "startMs": 106062.5,
+    "endMs": 106537.5
+  },
+  {
+    "word": "around",
+    "startMs": 106550.0,
+    "endMs": 106875.0
+  },
+  {
+    "word": "hydrothermal",
+    "startMs": 106887.5,
+    "endMs": 107575.0
+  },
+  {
+    "word": "vents",
+    "startMs": 107587.5,
+    "endMs": 108025.0
+  },
+  {
+    "word": "volcanic",
+    "startMs": 108225.0,
+    "endMs": 108775.0
+  },
+  {
+    "word": "extremophiles",
+    "startMs": 108787.5,
+    "endMs": 109650.0
+  },
+  {
+    "word": "thrive",
+    "startMs": 109662.5,
+    "endMs": 110037.5
+  },
+  {
+    "word": "in",
+    "startMs": 110050.0,
+    "endMs": 110137.5
+  },
+  {
+    "word": "volcanic",
+    "startMs": 110150.0,
+    "endMs": 110687.5
+  },
+  {
+    "word": "darkness",
+    "startMs": 110700.0,
+    "endMs": 111262.5
+  },
+  {
+    "word": "completely",
+    "startMs": 111512.5,
+    "endMs": 112075.0
+  },
+  {
+    "word": "indifferent",
+    "startMs": 112087.5,
+    "endMs": 112537.5
+  },
+  {
+    "word": "to",
+    "startMs": 112550.0,
+    "endMs": 112625.0
+  },
+  {
+    "word": "the",
+    "startMs": 112637.5,
+    "endMs": 112762.5
+  },
+  {
+    "word": "death",
+    "startMs": 112775.0,
+    "endMs": 113062.5
+  },
+  {
+    "word": "of",
+    "startMs": 113075.0,
+    "endMs": 113162.5
+  },
+  {
+    "word": "the",
+    "startMs": 113175.0,
+    "endMs": 113250.0
+  },
+  {
+    "word": "star",
+    "startMs": 113262.5,
+    "endMs": 113612.5
+  },
+  {
+    "word": "above",
+    "startMs": 113625.0,
+    "endMs": 114100.0
+  },
+  {
+    "word": "Billions",
+    "startMs": 114962.5,
+    "endMs": 115425.0
+  },
+  {
+    "word": "of",
+    "startMs": 115437.5,
+    "endMs": 115512.5
+  },
+  {
+    "word": "years",
+    "startMs": 115525.0,
+    "endMs": 115850.0
+  },
+  {
+    "word": "from",
+    "startMs": 115862.5,
+    "endMs": 116025.0
+  },
+  {
+    "word": "now",
+    "startMs": 116037.5,
+    "endMs": 116375.0
+  },
+  {
+    "word": "our",
+    "startMs": 116662.5,
+    "endMs": 116875.0
+  },
+  {
+    "word": "rogue",
+    "startMs": 116887.5,
+    "endMs": 117150.0
+  },
+  {
+    "word": "planet",
+    "startMs": 117162.5,
+    "endMs": 117562.5
+  },
+  {
+    "word": "will",
+    "startMs": 117575.0,
+    "endMs": 117712.5
+  },
+  {
+    "word": "drift",
+    "startMs": 117725.0,
+    "endMs": 118012.5
+  },
+  {
+    "word": "silently",
+    "startMs": 118025.0,
+    "endMs": 118550.0
+  },
+  {
+    "word": "through",
+    "startMs": 118562.5,
+    "endMs": 118775.0
+  },
+  {
+    "word": "interstellar",
+    "startMs": 118787.5,
+    "endMs": 119387.5
+  },
+  {
+    "word": "space",
+    "startMs": 119400.0,
+    "endMs": 119900.0
+  },
+  {
+    "word": "a",
+    "startMs": 120200.0,
+    "endMs": 120250.0
+  },
+  {
+    "word": "solitary",
+    "startMs": 120262.5,
+    "endMs": 120887.5
+  },
+  {
+    "word": "ark",
+    "startMs": 120900.0,
+    "endMs": 121200.0
+  },
+  {
+    "word": "bearing",
+    "startMs": 121212.5,
+    "endMs": 121537.5
+  },
+  {
+    "word": "life",
+    "startMs": 121550.0,
+    "endMs": 121800.0
+  },
+  {
+    "word": "across",
+    "startMs": 121812.5,
+    "endMs": 122175.0
+  },
+  {
+    "word": "the",
+    "startMs": 122187.5,
+    "endMs": 122275.0
+  },
+  {
+    "word": "galaxy",
+    "startMs": 122287.5,
+    "endMs": 122950.0
+  },
+  {
+    "word": "The",
+    "startMs": 123812.5,
+    "endMs": 123962.5
+  },
+  {
+    "word": "Sun",
+    "startMs": 123975.0,
+    "endMs": 124312.5
+  },
+  {
+    "word": "gave",
+    "startMs": 124325.0,
+    "endMs": 124550.0
+  },
+  {
+    "word": "us",
+    "startMs": 124562.5,
+    "endMs": 124712.5
+  },
+  {
+    "word": "birth",
+    "startMs": 124725.0,
+    "endMs": 125162.5
+  },
+  {
+    "word": "but",
+    "startMs": 125362.5,
+    "endMs": 125500.0
+  },
+  {
+    "word": "our",
+    "startMs": 125512.5,
+    "endMs": 125675.0
+  },
+  {
+    "word": "world's",
+    "startMs": 125687.5,
+    "endMs": 125987.5
+  },
+  {
+    "word": "inner",
+    "startMs": 126000.0,
+    "endMs": 126262.5
+  },
+  {
+    "word": "fire",
+    "startMs": 126275.0,
+    "endMs": 126650.0
+  },
+  {
+    "word": "guarantees",
+    "startMs": 126662.5,
+    "endMs": 127337.5
+  },
+  {
+    "word": "we",
+    "startMs": 127350.0,
+    "endMs": 127462.5
+  },
+  {
+    "word": "will",
+    "startMs": 127475.0,
+    "endMs": 127625.0
+  },
+  {
+    "word": "endure",
+    "startMs": 127637.5,
+    "endMs": 128200.0
+  }
+]

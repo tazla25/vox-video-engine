@@ -40,9 +40,14 @@ export class EdgeTTSAdapter implements TTSProvider {
 
       // Read output captions
       let wordTimestamps: WordTimestamp[] = [];
+      const publicCaptionsPath = path.join(process.cwd(), 'public', 'captions.json');
       if (fs.existsSync(captionsPath)) {
         const rawCaptions = fs.readFileSync(captionsPath, 'utf8');
         wordTimestamps = JSON.parse(rawCaptions);
+      } else if (fs.existsSync(publicCaptionsPath)) {
+        const rawCaptions = fs.readFileSync(publicCaptionsPath, 'utf8');
+        wordTimestamps = JSON.parse(rawCaptions);
+        fs.copyFileSync(publicCaptionsPath, captionsPath);
       }
 
       // Check audio file

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "remotion preview src/index.ts",
     "build": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test src/studio/tests/*.test.ts",
     "studio": "node --experimental-strip-types src/studio/cli/index.ts",
     "render": "remotion render src/index.ts VoxShort out/video.mp4"
   },

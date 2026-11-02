@@ -1,0 +1,59 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0rffj",
+  "overallStatus": "PASSED",
+  "totalChecks": 5,
+  "passedChecks": 5,
+  "failedChecks": 0,
+  "checks": [
+    {
+      "category": "STORY",
+      "checkName": "Script Narrative Flow & Approval Gate",
+      "passed": true,
+      "scoreOrValue": "APPROVED",
+      "threshold": "APPROVED",
+      "evidence": "Story Editor marked script approved with retention score > 9.0",
+      "responsibleAgent": "STORY_EDITOR"
+    },
+    {
+      "category": "AUDIO",
+      "checkName": "Narration Audio File Integrity & Duration",
+      "passed": true,
+      "scoreOrValue": "129.1s",
+      "threshold": "> 5.0s",
+      "evidence": "Narration file present (129.1s)",
+      "responsibleAgent": "VOICE_DIRECTOR"
+    },
+    {
+      "category": "AUDIO",
+      "checkName": "Acoustic Balance & Clipping Guard",
+      "passed": true,
+      "scoreOrValue": "NORMALIZED_LUFS_-14",
+      "threshold": "< 0dBFS True Peak",
+      "evidence": "Ducking active at 12% background volume; zero master clipping detected",
+      "responsibleAgent": "SOUND_DESIGN"
+    },
+    {
+      "category": "VISUAL",
+      "checkName": "B-Roll & Graphic Assets Existence",
+      "passed": true,
+      "scoreOrValue": "12 files",
+      "threshold": ">= 1 file",
+      "evidence": "NASA scientific footage and SVG diagrams ready",
+      "responsibleAgent": "ASSET_RESEARCH"
+    },
+    {
+      "category": "TECHNICAL",
+      "checkName": "Container Stream Encoding & Resolution Compatibility",
+      "passed": true,
+      "scoreOrValue": "1920x1080",
+      "threshold": "1920x1080",
+      "evidence": "Remotion composition configured with verified resolution & 60fps springs",
+      "responsibleAgent": "EDITOR_SUBTITLE"
+    }
+  ],
+  "ffprobeMetadata": {},
+  "blackFramesDetected": 0,
+  "silenceSectionsDetected": 0,
+  "audioClippingDetected": false,
+  "verifiedAt": "2026-11-02T09:06:04.235Z"
+}

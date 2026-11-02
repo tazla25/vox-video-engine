@@ -205,7 +205,7 @@ export const GenerationRequestSchema = z.object({
   negativePrompt: z.string().optional(),
   provider: z.string(),
   model: z.string(),
-  parameters: z.record(z.unknown()).default({}),
+  parameters: z.record(z.string(), z.unknown()).default({}),
   status: z.enum(['PENDING', 'GENERATING', 'COMPLETED', 'FAILED']),
   outputAssetId: z.string().optional(),
   costUsd: z.number().default(0),
@@ -273,7 +273,7 @@ export const TimelineClipSchema = z.object({
     x: z.number().default(0),
     y: z.number().default(0),
     opacity: z.number().min(0).max(1).default(1),
-  }).default({}),
+  }).default({ scale: 1, x: 0, y: 0, opacity: 1 }),
   motionEffect: z.string().optional(),
 });
 
@@ -307,7 +307,7 @@ export const QAReportSchema = z.object({
   passedChecks: z.number().int(),
   failedChecks: z.number().int(),
   checks: z.array(QACheckItemSchema),
-  ffprobeMetadata: z.record(z.unknown()).optional(),
+  ffprobeMetadata: z.record(z.string(), z.unknown()).optional(),
   blackFramesDetected: z.number().int().default(0),
   silenceSectionsDetected: z.number().int().default(0),
   audioClippingDetected: z.boolean().default(false),

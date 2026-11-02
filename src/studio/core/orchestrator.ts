@@ -136,6 +136,21 @@ export class StudioOrchestrator {
     stateData.approvedAt = new Date().toISOString();
     fs.writeFileSync(statePath, JSON.stringify(stateData, null, 2), 'utf8');
 
+    // Reconcile production report to guarantee manifest consistency
+    const reportPath = path.join(projectDir, 'production-report.json');
+    if (fs.existsSync(reportPath)) {
+      try {
+        const reportData = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+        reportData.currentStatus = 'APPROVED';
+        reportData.isAwaitingHumanApproval = false;
+        reportData.approvedAt = stateData.approvedAt;
+        reportData.summary = `Project has been formally APPROVED by human creator at ${stateData.approvedAt}. Cloud rendering authorized.`;
+        fs.writeFileSync(reportPath, JSON.stringify(reportData, null, 2), 'utf8');
+      } catch (e) {
+        this.logger.warn(`Failed to update production-report.json for ${projectId}`, { err: String(e) });
+      }
+    }
+
     this.logger.info(`Project [${projectId}] has been formally APPROVED by human creator.`);
     return {
       approved: true,
@@ -165,6 +180,20 @@ export class StudioOrchestrator {
       stateData.state = 'NEEDS_REVISION';
       stateData.revisionCount = (stateData.revisionCount || 0) + 1;
       fs.writeFileSync(statePath, JSON.stringify(stateData, null, 2), 'utf8');
+    }
+
+    // Reconcile production report to guarantee manifest consistency
+    const reportPath = path.join(projectDir, 'production-report.json');
+    if (fs.existsSync(reportPath)) {
+      try {
+        const reportData = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+        reportData.currentStatus = 'NEEDS_REVISION';
+        reportData.isAwaitingHumanApproval = false;
+        reportData.summary = `Project requires revision (Iteration ${fullRevision.revisionId}). Instruction: "${validated.instruction}"`;
+        fs.writeFileSync(reportPath, JSON.stringify(reportData, null, 2), 'utf8');
+      } catch (e) {
+        this.logger.warn(`Failed to update production-report.json on revision for ${projectId}`, { err: String(e) });
+      }
     }
 
     this.logger.info(`Revision submitted for [${projectId}]: ${validated.instruction}`);
