@@ -1,0 +1,45 @@
+{
+  "projectId": "test-sync-proj",
+  "fps": 30,
+  "totalFrames": 3903,
+  "width": 1920,
+  "height": 1080,
+  "clips": [
+    {
+      "clipId": "clip-shot-1",
+      "shotId": "shot-1",
+      "sceneId": "scene-1",
+      "startFrame": 0,
+      "durationInFrames": 1912,
+      "assetRef": "public/assets/sun_broll.mp4",
+      "visualType": "REAL_FOOTAGE",
+      "layerIndex": 1,
+      "transform": {
+        "scale": 1,
+        "x": 0,
+        "y": 0,
+        "opacity": 1
+      },
+      "motionEffect": "Static"
+    },
+    {
+      "clipId": "clip-shot-2",
+      "shotId": "shot-2",
+      "sceneId": "scene-2",
+      "startFrame": 1912,
+      "durationInFrames": 1991,
+      "assetRef": "public/assets/earth_broll.mp4",
+      "visualType": "REAL_FOOTAGE",
+      "layerIndex": 1,
+      "transform": {
+        "scale": 1,
+        "x": 0,
+        "y": 0,
+        "opacity": 1
+      },
+      "motionEffect": "Static"
+    }
+  ],
+  "audioManifestRef": "audio-manifest.json",
+  "createdAt": "2026-11-02T10:20:07.868Z"
+}

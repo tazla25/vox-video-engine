@@ -4,56 +4,59 @@ import {
   Sequence,
   Audio,
   staticFile,
-  useVideoConfig,
 } from "remotion";
 import { GrainOverlay } from "./components/GrainOverlay";
 import { CaptionsHighlighter } from "./components/CaptionsHighlighter";
-import { HookScene } from "./scenes/HookScene";
-import { ScienceScene } from "./scenes/ScienceScene";
-import { RevealScene } from "./scenes/RevealScene";
+import { DynamicShot, DynamicShotClip } from "./components/DynamicShot";
 
-// Import word captions
+// Import validated data-driven timeline manifest and word captions
+import timelineData from "../public/timeline.json";
 import captionsData from "../public/captions.json";
 
-// Calculate dynamic duration from captions or default to 1100 frames (18.33s @ 60fps)
-const lastCaption = (captionsData as Array<{ endMs: number }>)[captionsData.length - 1];
-const dynamicAudioSeconds = lastCaption ? (lastCaption.endMs / 1000) + 1.2 : 18.33;
-const COMPOSITION_DURATION_IN_FRAMES = Math.max(1100, Math.round(dynamicAudioSeconds * 60));
+export interface TimelineManifest {
+  projectId: string;
+  fps: number;
+  totalFrames: number;
+  width: number;
+  height: number;
+  clips: DynamicShotClip[];
+}
 
-const MainComposition: React.FC = () => {
-  const { durationInFrames } = useVideoConfig();
-
-  // Distribute scene sequences proportionally across the full duration
-  const scene1Duration = Math.round(durationInFrames * 0.32);
-  const scene2Duration = Math.round(durationInFrames * 0.34);
-  const scene3Duration = durationInFrames - scene1Duration - scene2Duration;
+export const TimelineComposition: React.FC<{ timeline?: TimelineManifest }> = ({
+  timeline = timelineData as unknown as TimelineManifest,
+}) => {
+  const { clips, fps, width, height } = timeline;
 
   return (
     <div
       style={{
         position: "relative",
-        width: 1080,
-        height: 1920,
+        width,
+        height,
         backgroundColor: "#07080b",
         overflow: "hidden",
       }}
     >
-      {/* Layer 1: Real NASA Footage Sequential Scenes */}
-      <Sequence from={0} durationInFrames={scene1Duration} name="Hook_RealSun">
-        <HookScene />
-      </Sequence>
-
-      <Sequence from={scene1Duration} durationInFrames={scene2Duration} name="Science_RealEarth">
-        <ScienceScene />
-      </Sequence>
-
-      <Sequence from={scene1Duration + scene2Duration} durationInFrames={scene3Duration} name="Reveal_RealVoid">
-        <RevealScene />
-      </Sequence>
+      {/* Layer 1: Dynamically Rendered Sequential Clips from Timeline Manifest */}
+      {clips.map((clip) => (
+        <Sequence
+          key={clip.clipId}
+          from={clip.startFrame}
+          durationInFrames={clip.durationInFrames}
+          name={`${clip.sceneId}_${clip.shotId}`}
+        >
+          <DynamicShot
+            clip={clip}
+            fps={fps}
+            width={width}
+            height={height}
+          />
+        </Sequence>
+      ))}
 
       {/* Layer 2: Audio Layers (Voice + Cinematic Ambient Synth Drone) */}
       <Audio src={staticFile("narration.mp3")} volume={1.0} />
-      <Audio src={staticFile("ambient_drone.mp3")} volume={0.25} />
+      <Audio src={staticFile("ambient_drone.mp3")} volume={0.15} />
 
       {/* Layer 3: Synced Word-by-Word Karaoke Subtitles */}
       <CaptionsHighlighter captions={captionsData} />
@@ -65,15 +68,42 @@ const MainComposition: React.FC = () => {
 };
 
 export const RemotionRoot: React.FC = () => {
+  const timeline = timelineData as unknown as TimelineManifest;
+
   return (
     <>
+      {/* Full 1080x1920 Vertical Short composition */}
       <Composition
         id="VoxShort"
-        component={MainComposition}
-        durationInFrames={COMPOSITION_DURATION_IN_FRAMES}
-        fps={60}
+        component={TimelineComposition}
+        durationInFrames={timeline.totalFrames}
+        fps={timeline.fps}
         width={1080}
         height={1920}
+        defaultProps={{
+          timeline: {
+            ...timeline,
+            width: 1080,
+            height: 1920,
+          },
+        }}
+      />
+
+      {/* Standard 1920x1080 Horizontal Documentary composition */}
+      <Composition
+        id="VoxVideo"
+        component={TimelineComposition}
+        durationInFrames={timeline.totalFrames}
+        fps={timeline.fps}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          timeline: {
+            ...timeline,
+            width: 1920,
+            height: 1080,
+          },
+        }}
       />
     </>
   );

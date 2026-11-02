@@ -184,10 +184,11 @@ test('6. QualityAssuranceAgent executes real FFprobe/FFmpeg acoustic and asset i
   assert.strictEqual(typeof result.data.silenceSectionsDetected, 'number');
   assert.strictEqual(typeof result.data.audioClippingDetected, 'boolean');
 
-  // Verify technical check is truthfully marked as pre-render
+  // Verify technical check is truthfully marked as SKIPPED in pre-render
   const techCheck = result.data.checks.find(c => c.category === 'TECHNICAL');
   assert.ok(techCheck);
-  assert.strictEqual(techCheck.scoreOrValue, 'DEFERRED_PRE_RENDER');
+  assert.strictEqual(techCheck.status, 'SKIPPED');
+  assert.strictEqual(techCheck.scoreOrValue, 'SKIPPED_PRE_RENDER');
 });
 
 test('7. EditorAndSubtitleAgent dynamically synchronizes timeline frames to real narration duration', async () => {

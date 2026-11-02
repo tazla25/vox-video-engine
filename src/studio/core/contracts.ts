@@ -293,6 +293,7 @@ export const QACheckItemSchema = z.object({
   category: z.enum(['STORY', 'VISUAL', 'AUDIO', 'TECHNICAL']),
   checkName: z.string(),
   passed: z.boolean(),
+  status: z.enum(['PASS', 'FAIL', 'SKIPPED', 'ERROR']).default('PASS'),
   scoreOrValue: z.string().or(z.number()),
   threshold: z.string().or(z.number()),
   evidence: z.string(),
@@ -302,10 +303,12 @@ export const QACheckItemSchema = z.object({
 
 export const QAReportSchema = z.object({
   projectId: z.string(),
-  overallStatus: z.enum(['PASSED', 'WARNING', 'FAILED']),
+  overallStatus: z.enum(['PASSED', 'WARNING', 'FAILED', 'ERROR']),
   totalChecks: z.number().int(),
   passedChecks: z.number().int(),
   failedChecks: z.number().int(),
+  skippedChecks: z.number().int().default(0),
+  errorChecks: z.number().int().default(0),
   checks: z.array(QACheckItemSchema),
   ffprobeMetadata: z.record(z.string(), z.unknown()).optional(),
   blackFramesDetected: z.number().int().default(0),

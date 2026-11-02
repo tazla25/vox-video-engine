@@ -5,3 +5,5 @@ temp/
 *.log
 .env
 public/assets/clip-*.mp4
+artifacts/*.mp4
+raw_*.mp4
