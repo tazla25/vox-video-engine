@@ -1,0 +1,46 @@
+name: Render Vox Video on 16GB Cloud
+
+on:
+  workflow_dispatch:
+    inputs:
+      compositionId:
+        description: 'Remotion Composition ID to render'
+        required: true
+        default: 'VoxShort'
+      codec:
+        description: 'Video Codec (h264 or prores)'
+        required: true
+        default: 'h264'
+  push:
+    branches:
+      - main
+
+jobs:
+  render:
+    name: Render 1080p 60fps MP4
+    runs-on: ubuntu-latest # 4 vCPUs, 16 GB RAM, 14 GB SSD (100% Free on Public Repos)
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install Node Dependencies
+        run: npm install
+
+      - name: 🎬 Render Remotion Video (16GB RAM Runner)
+        run: |
+          mkdir -p out
+          npx remotion render src/index.ts ${{ github.event.inputs.compositionId || 'VoxShort' }} out/video.mp4 --codec ${{ github.event.inputs.codec || 'h264' }} --crf 17 --scale 1
+
+      - name: 🚀 Upload Video Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vox-space-video-1080p
+          path: out/video.mp4
+          retention-days: 7

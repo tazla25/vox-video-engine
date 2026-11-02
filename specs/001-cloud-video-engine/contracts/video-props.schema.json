@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "MasterVideoProps",
+  "type": "object",
+  "required": ["metadata", "scenes", "captions", "theme"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["title", "fps", "width", "height", "durationInFrames", "audioFile"],
+      "properties": {
+        "title": { "type": "string" },
+        "fps": { "type": "integer", "enum": [30, 60] },
+        "width": { "type": "integer", "default": 1080 },
+        "height": { "type": "integer", "default": 1920 },
+        "durationInFrames": { "type": "integer" },
+        "audioFile": { "type": "string" }
+      }
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "durationInFrames", "layout"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "subtitle": { "type": "string" },
+          "durationInFrames": { "type": "integer" },
+          "layout": { "type": "string" },
+          "highlightWords": { "type": "array", "items": { "type": "string" } },
+          "graphicType": { "type": "string" }
+        }
+      }
+    },
+    "captions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["word", "startMs", "endMs"],
+        "properties": {
+          "word": { "type": "string" },
+          "startMs": { "type": "number" },
+          "endMs": { "type": "number" }
+        }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "required": ["bg", "textPrimary", "textAccent"],
+      "properties": {
+        "bg": { "type": "string" },
+        "textPrimary": { "type": "string" },
+        "textAccent": { "type": "string" },
+        "fontFamily": { "type": "string" }
+      }
+    }
+  }
+}
