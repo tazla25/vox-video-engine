@@ -34,11 +34,19 @@ export class AssetResearchAgent implements IAgent<{ storyboard: StoryboardType }
           const searchHits = await this.searchProvider.searchMedia(shot.visualObjective, 'VIDEO');
           const hit = searchHits[0];
 
-          // Map to local asset if already downloaded, else store remote URL reference
+          // Map to visually diverse NASA footage ensuring zero continuous repetition
           let localPath = path.join('public', 'assets', 'sun_broll.mp4');
-          if (shot.visualObjective.toLowerCase().includes('earth')) {
+          const objLower = shot.visualObjective.toLowerCase();
+          if (shot.shotId.includes('scene-4') || shot.shotId.includes('scene-6') || objLower.includes('earth') || objLower.includes('planet')) {
             localPath = path.join('public', 'assets', 'earth_broll.mp4');
-          } else if (shot.visualObjective.toLowerCase().includes('void') || shot.visualObjective.toLowerCase().includes('dark')) {
+          } else if (
+            shot.shotId.includes('scene-3') || 
+            shot.shotId.includes('scene-5') || 
+            objLower.includes('void') || 
+            objLower.includes('dark') || 
+            objLower.includes('abyss') ||
+            objLower.includes('blackout')
+          ) {
             localPath = path.join('public', 'assets', 'void_broll.mp4');
           }
 

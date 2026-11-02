@@ -43,29 +43,10 @@ export const DynamicShot: React.FC<DynamicShotProps> = ({
 }) => {
   const frame = useCurrentFrame();
 
-  // If assetRef is completely empty or undefined, render explicit error banner
+  // Reject missing asset references before rendering rather than displaying error banners
   if (!clip.assetRef || clip.assetRef.trim() === "") {
-    return (
-      <div
-        style={{
-          position: "absolute",
-          inset: 0,
-          backgroundColor: "#450a0a",
-          color: "#f87171",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: 40,
-          fontFamily: THEME.fonts.mono,
-          zIndex: 50,
-        }}
-      >
-        <h2 style={{ fontSize: 32, margin: 0 }}>CRITICAL ASSET ERROR</h2>
-        <p style={{ fontSize: 20, marginTop: 12 }}>
-          Missing asset specification for shot: {clip.shotId}
-        </p>
-      </div>
+    throw new Error(
+      `[DynamicShot Validation Failure] Missing asset specification for shot "${clip.shotId}" in scene "${clip.sceneId}". Silent fallback banned.`
     );
   }
 
@@ -211,26 +192,28 @@ export const DynamicShot: React.FC<DynamicShotProps> = ({
         </span>
       </div>
 
-      {/* Layer 4: Screen Text / Tactical Telemetry HUD */}
+      {/* Layer 4: Screen Text / Tactical Telemetry HUD (Safely elevated above subtitle zone) */}
       {clip.screenTextOrDiagram && (
         <div
           style={{
             position: "absolute",
-            bottom: 300,
+            bottom: 360,
             left: "50%",
             transform: "translateX(-50%)",
-            padding: "12px 24px",
+            padding: "10px 22px",
             borderRadius: 12,
-            backgroundColor: "rgba(10, 15, 30, 0.8)",
-            border: `1px solid ${THEME.colors.accentYellow}66`,
+            backgroundColor: "rgba(10, 15, 30, 0.85)",
+            border: `1.5px solid ${THEME.colors.accentYellow}88`,
+            boxShadow: `0 4px 20px rgba(0, 0, 0, 0.7)`,
             fontFamily: THEME.fonts.mono,
-            fontSize: 20,
+            fontSize: 18,
             fontWeight: 700,
             color: THEME.colors.accentYellow,
-            letterSpacing: "1.5px",
+            letterSpacing: "1.2px",
             zIndex: 25,
             textAlign: "center",
-            maxWidth: "80%",
+            maxWidth: "78%",
+            lineHeight: 1.3,
           }}
         >
           {clip.screenTextOrDiagram}

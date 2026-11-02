@@ -55,11 +55,11 @@
       "source": "NASA_PUBLIC_DOMAIN",
       "license": "NASA Public Domain (Free for Commercial and Educational Use)",
       "attributionRequired": true,
-      "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
-      "localPath": "public/assets/sun_broll.mp4",
-      "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+      "attributionText": "Earth Orbit and Atmosphere Spin courtesy of NASA Earth Observatory",
+      "localPath": "public/assets/void_broll.mp4",
+      "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02_1080p60.mp4",
       "resolution": "1920x1080",
-      "durationSeconds": 22,
+      "durationSeconds": 18,
       "isVerified": true
     },
     {
@@ -80,11 +80,11 @@
       "source": "NASA_PUBLIC_DOMAIN",
       "license": "NASA Public Domain (Free for Commercial and Educational Use)",
       "attributionRequired": true,
-      "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
-      "localPath": "public/assets/sun_broll.mp4",
-      "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+      "attributionText": "Earth Orbit and Atmosphere Spin courtesy of NASA Earth Observatory",
+      "localPath": "public/assets/earth_broll.mp4",
+      "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02_1080p60.mp4",
       "resolution": "1920x1080",
-      "durationSeconds": 24,
+      "durationSeconds": 17,
       "isVerified": true
     },
     {
@@ -106,10 +106,10 @@
       "license": "NASA Public Domain (Free for Commercial and Educational Use)",
       "attributionRequired": true,
       "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
-      "localPath": "public/assets/sun_broll.mp4",
+      "localPath": "public/assets/void_broll.mp4",
       "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
       "resolution": "1920x1080",
-      "durationSeconds": 19,
+      "durationSeconds": 17,
       "isVerified": true
     },
     {
@@ -130,9 +130,9 @@
       "source": "NASA_PUBLIC_DOMAIN",
       "license": "NASA Public Domain (Free for Commercial and Educational Use)",
       "attributionRequired": true,
-      "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
-      "localPath": "public/assets/sun_broll.mp4",
-      "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+      "attributionText": "Earth Orbit and Atmosphere Spin courtesy of NASA Earth Observatory",
+      "localPath": "public/assets/earth_broll.mp4",
+      "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a000000/a005500/a005570/Earth_wAtmos_spin_02_1080p60.mp4",
       "resolution": "1920x1080",
       "durationSeconds": 14,
       "isVerified": true
@@ -150,5 +150,5 @@
     }
   ],
   "totalAssets": 12,
-  "createdAt": "2026-11-02T08:52:32.999Z"
+  "createdAt": "2026-11-02T11:13:09.797Z"
 }

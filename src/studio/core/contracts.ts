@@ -265,7 +265,7 @@ export const TimelineClipSchema = z.object({
   sceneId: z.string(),
   startFrame: z.number().int().nonnegative(),
   durationInFrames: z.number().int().positive(),
-  assetRef: z.string(),
+  assetRef: z.string().min(1, 'Asset reference cannot be empty'),
   visualType: VisualTypeSchema,
   layerIndex: z.number().int().default(0),
   transform: z.object({
@@ -275,6 +275,7 @@ export const TimelineClipSchema = z.object({
     opacity: z.number().min(0).max(1).default(1),
   }).default({ scale: 1, x: 0, y: 0, opacity: 1 }),
   motionEffect: z.string().optional(),
+  screenTextOrDiagram: z.string().optional(),
 });
 
 export const TimelineSchema = z.object({

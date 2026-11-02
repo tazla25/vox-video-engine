@@ -93,8 +93,17 @@ jobs:
           mkdir -p out
           COMPOSITION="${{ github.event.inputs.compositionId || 'VoxShort' }}"
           CODEC="${{ github.event.inputs.codec || 'h264' }}"
-          echo "Rendering composition: $COMPOSITION with codec: $CODEC..."
-          npx remotion render src/index.ts "$COMPOSITION" out/video.mp4 --codec "$CODEC" --crf 17 --scale 1
+          PROJECT_ID="${{ github.event.inputs.projectId || 'what-happens-if-the-sun-disapp-mvz0tfzr' }}"
+          PROPS_FILE="projects/${PROJECT_ID}/render-props.json"
+
+          echo "🎬 Rendering composition: $COMPOSITION for project: $PROJECT_ID with codec: $CODEC..."
+          if [ -f "$PROPS_FILE" ]; then
+            echo "Using validated project render-props at $PROPS_FILE"
+            npx remotion render src/index.ts "$COMPOSITION" out/video.mp4 --codec "$CODEC" --crf 17 --scale 1 --props="$PROPS_FILE"
+          else
+            echo "Using default public composition props"
+            npx remotion render src/index.ts "$COMPOSITION" out/video.mp4 --codec "$CODEC" --crf 17 --scale 1
+          fi
 
       - name: 🔍 Post-Render Media Integrity & Stream Verification
         run: |
@@ -105,9 +114,21 @@ jobs:
           DURATION=$(ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 out/video.mp4)
           echo "✅ Rendered MP4 Duration: ${DURATION}s"
 
+          echo "📸 Extracting representative sample frames across duration..."
+          mkdir -p out/samples
+          ffmpeg -y -ss 00:00:10 -i out/video.mp4 -frames:v 1 -q:v 2 out/samples/frame_010s.jpg
+          ffmpeg -y -ss 00:01:00 -i out/video.mp4 -frames:v 1 -q:v 2 out/samples/frame_060s.jpg
+          ffmpeg -y -ss 00:01:50 -i out/video.mp4 -frames:v 1 -q:v 2 out/samples/frame_110s.jpg
+          ffmpeg -y -ss 00:02:40 -i out/video.mp4 -frames:v 1 -q:v 2 out/samples/frame_160s.jpg
+          ffmpeg -y -ss 00:03:20 -i out/video.mp4 -frames:v 1 -q:v 2 out/samples/frame_200s.jpg
+          ls -lh out/samples/
+
       - name: 🚀 Upload Video Artifact
         uses: actions/upload-artifact@v4
         with:
           name: vox-rendered-video-1080p
-          path: out/video.mp4
+          path: |
+            out/video.mp4
+            out/probe.json
+            out/samples/
           retention-days: 7

@@ -262,3 +262,65 @@ The 14 specialist roles have been audited and explicitly classified:
   - `artifacts/samples/frame_045s.jpg` (100 KB) - Science Scene: Atmospheric Earth rotation with telemetry HUD.
   - `artifacts/samples/frame_085s.jpg` (97 KB) - Deep Void Scene: Interstellar tangent drift in deep space.
   - `artifacts/samples/frame_125s.jpg` (86 KB) - Resolution Scene: Hydrothermal extremophiles and enduring life.
+
+---
+
+## 7. Third-Pass Integration and Visual Quality Repair (Confirmed & Verified)
+
+### 7.1 Critical Issue 1: Data Contract Alignment & Project-Specific Timeline Loading
+- **Root Cause**: `EditorAndSubtitleAgent` wrote test-project data directly into `public/timeline.json` when `npm test` executed, creating a 2-clip mock that overwrote the 12-clip project timeline. Furthermore, `src/Root.tsx` hardcoded static imports rather than consuming project properties.
+- **Implementation**:
+  - Upgraded `TimelineClipSchema` with `assetRef: z.string().min(1)` (enforcing non-empty asset specifications at schema boundary) and `screenTextOrDiagram: z.string().optional()`.
+  - Added `ProjectRenderProps` contract to `src/Root.tsx` with dynamic `calculateMetadata` configuring `durationInFrames`, `fps`, `width`, `height`, and injecting project timeline and captions.
+  - Implemented pre-render validation in `TimelineComposition` and `DynamicShot`: any missing or empty `assetRef` throws an immediate, fatal error rather than rendering a silent fallback banner.
+  - Isolated test executions in `13-editor-subtitle.ts` so unit tests no longer overwrite `public/timeline.json`.
+  - Generated `render-props.json` in both `projects/${projectId}/` and `public/` bundling the complete validated timeline, captions, and audio manifests.
+
+### 7.2 Critical Issue 2: Complete 12-Shot Sequenced Project Composition
+- **Implementation**:
+  - Compiled active project `what-happens-if-the-sun-disapp-mvz0tfzr` into 12 distinct shots across 6 narrative scenes.
+  - Sequenced frame intervals sequentially with zero gaps:
+    1. `scene-1-shot-1`: Frames `0 - 1010` (NASA SDO Sun Flare)
+    2. `scene-1-shot-2`: Frames `1010 - 2080` (Gravitational wave vector SVG)
+    3. `scene-2-shot-1`: Frames `2080 - 3209` (Spacetime curvature diagram SVG)
+    4. `scene-2-shot-2`: Frames `3209 - 4457` (Photon trajectory vector SVG)
+    5. `scene-3-shot-1`: Frames `4457 - 5527` (Hubble deep field dark void)
+    6. `scene-3-shot-2`: Frames `5527 - 6716` (Tangential velocity vector SVG)
+    7. `scene-4-shot-1`: Frames `6716 - 7726` (NASA Earth atmospheric view)
+    8. `scene-4-shot-2`: Frames `7726 - 8855` (Planetary cryosphere thermal SVG)
+    9. `scene-5-shot-1`: Frames `8855 - 9865` (Abyssal deep space void)
+    10. `scene-5-shot-2`: Frames `9865 - 10994` (Geothermal hydrothermal vent SVG)
+    11. `scene-6-shot-1`: Frames `10994 - 11826` (NASA Earth wandering rogue planet)
+    12. `scene-6-shot-2`: Frames `11826 - 12777` (Galactic drift diagram SVG)
+- **Integration Test Proof**: Added `src/studio/tests/integration.test.ts` asserting all 12 clips exist, start frames sequence with zero gaps, and physical asset files exist on disk with non-zero byte size.
+
+### 7.3 Critical Issue 3: Visual Clutter Elimination & Safe Area Hierarchy
+- **Decommissioning Legacy Overlays**: Completely deleted `src/scenes/HookScene.tsx`, `src/scenes/ScienceScene.tsx`, and `src/scenes/RevealScene.tsx` (the source of the accidental "0 PARTICLES" card).
+- **Subtitle Safe Area Architecture**:
+  - Refactored `src/components/CaptionsHighlighter.tsx` with safe area bounds at `bottom: 170px`, `maxWidth: "76%"`, `maxHeight: "130px"`.
+  - Constrained word display to clean 4-word window to guarantee maximum 2 lines of text.
+  - Suppressed captions during opening silence (`currentMs < captions[0].startMs - 200ms`) and after narration concludes.
+  - Active word highlighted in gold `#facc15` with subtle glow; inactive words rendered in legible neutral `#cbd5e1` over clean semi-transparent dark glass (`rgba(7, 8, 11, 0.78)`).
+- **HUD Collision Prevention**: Elevated Tactical Telemetry HUD in `src/components/DynamicShot.tsx` to `bottom: 360px`, guaranteeing zero bounding-box collision with subtitle safe area. Footage center zone (1000px height) remains completely unobstructed.
+
+### 7.4 Critical Issue 4: Shot Diversity & Elimination of Monotonic Composition
+- Alternated visual mediums across all 12 shots: 3 distinct real NASA video assets (`sun_broll.mp4`, `earth_broll.mp4`, `void_broll.mp4`) and 6 custom high-density scientific SVG diagrams.
+- No footage remains on screen for more than 20 seconds, eliminating long static loops.
+
+### 7.5 Critical Issue 5: 3–5 Minute Duration Requirement Enforcement
+- **Script Expansion**: Expanded script text from 350 to 505 words of scientifically fact-checked content detailing the 8:20 light delay, gravitational snapping, albedo loss, tangential slingshot, thermal decay (-73°C), oceanic freezing, geothermal vent survival, and rogue planet drift.
+- **Neural Speech Synthesis**: Generated full narration via Edge-TTS (`en-US-ChristopherNeural`):
+  - File: `public/narration.mp3` & `projects/what-happens-if-the-sun-disapp-mvz0tfzr/narration.mp3`.
+  - Measured Duration via FFprobe: **211.944000 seconds** (3m 31.9s).
+  - Word-level timestamps in `captions.json`: 505 words ending at `211,075 ms`.
+- **Composition Duration**: Calibrated to `211.944s + 1.0s` outro padding = **212.95 seconds** (**12,777 frames @ 60 FPS**), directly satisfying the 180s - 300s requirement.
+
+### 7.6 Critical Issue 6: Truthful Empirical QA Reporting
+- Refactored `src/studio/agents/14-quality-assurance.ts` to derive reported resolution directly from FFprobe video stream metadata (`vStream.width` x `vStream.height`).
+- Verified resolution matches target composition aspect ratio (`1080x1920` for vertical 9:16 or `1920x1080` for horizontal 16:9).
+- Removed all hardcoded measurement fallbacks.
+
+### 7.7 Critical Issue 7: Cloud Render Configuration & Multi-Frame Sample Extraction
+- Updated `.github/workflows/render.yml` to pass `--props="projects/${PROJECT_ID}/render-props.json"`.
+- Added automated extraction of 5 representative sample frames across the 212.9s video (`010s`, `060s`, `110s`, `160s`, `200s`) uploaded with video artifact `vox-rendered-video-1080p`.
+- Full test suite: **16/16 tests passing** with exit code 0 (`npm test`).

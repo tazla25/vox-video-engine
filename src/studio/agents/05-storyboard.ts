@@ -22,8 +22,47 @@ export class StoryboardAgent implements IAgent<{ script: ScriptType }, Storyboar
 
       const isHook = section.sectionType === 'HOOK';
       const isPremise = section.sectionType === 'PREMISE';
+      const isConflict = section.sectionType === 'CORE_CONFLICT';
+      const isExplanation = section.sectionType === 'EXPLANATION';
       const isClimax = section.sectionType === 'CLIMAX';
       const isResolution = section.sectionType === 'RESOLUTION';
+
+      let shot1Objective = `Establish visual anchor for ${section.sectionType.toLowerCase()}`;
+      let shot2Objective = `Demonstrate physical consequence of ${section.sectionType.toLowerCase()}`;
+      let shot1Hud: string | undefined = undefined;
+      let shot2Hud: string | undefined = undefined;
+
+      if (isHook) {
+        shot1Objective = 'Solar corona flare and sudden light horizon cutoff';
+        shot1Hud = 'LIGHT-SPEED HORIZON // 8 MIN 20 SEC';
+        shot2Objective = 'Sun vanishing telemetry grid and high-speed gravitational wave propagation';
+        shot2Hud = 'GRAVITATIONAL WAVE PROPAGATION: c';
+      } else if (isPremise) {
+        shot1Objective = '3D spacetime coordinate mesh warped under solar mass';
+        shot1Hud = 'GENERAL RELATIVITY // SPACETIME CURVATURE';
+        shot2Objective = '500-second light delay timeline and final photon trajectory';
+        shot2Hud = 'PHOTON TRAJECTORY // 299,792 KM/S';
+      } else if (isConflict) {
+        shot1Objective = 'Hubble Deep Field dark cosmic void and instant daytime hemisphere blackout';
+        shot1Hud = 'TOTAL BLACKOUT // ZERO REFLECTED LUNAR ALBEDO';
+        shot2Objective = 'Earth breaking free from elliptical orbit into straight tangent vector';
+        shot2Hud = 'VELOCITY: 30 KM/S // INTERSTELLAR TANGENT';
+      } else if (isExplanation) {
+        shot1Objective = 'Earth satellite view showing thermal camera heatmap decay and glacier expansion';
+        shot1Hud = 'THERMAL DECAY // SURFACE T: -73°C';
+        shot2Objective = 'Global oceans freezing solid under impenetrable kilometer-thick ice shell';
+        shot2Hud = 'GLOBAL CRYPT // SURFACE ICE: 1.0 KM';
+      } else if (isClimax) {
+        shot1Objective = 'Submersible descent into midnight oceanic abyss';
+        shot1Hud = 'ABYSSAL TRENCH // DEPTH: 11,000 M';
+        shot2Objective = 'Hydrothermal black smokers powered by molten nickel-iron core geothermal heat';
+        shot2Hud = 'GEOTHERMAL POWER: 47 TW // CORE METABOLISM';
+      } else if (isResolution) {
+        shot1Objective = 'Rogue frozen Earth cruising as solitary ark through distant star clusters';
+        shot1Hud = 'ROGUE PLANET ARK // ORION SPUR DRIFT';
+        shot2Objective = 'Enduring life timeline and deep galactic stellar trajectory';
+        shot2Hud = 'LIFE ENDURANCE // TIMELINE: 5 BILLION YEARS';
+      }
 
       return {
         sceneId,
@@ -39,15 +78,21 @@ export class StoryboardAgent implements IAgent<{ script: ScriptType }, Storyboar
             visualType: isHook ? ('REAL_FOOTAGE' as const) : isPremise ? ('MOTION_GRAPHICS' as const) : ('REAL_FOOTAGE' as const),
             visualDecisionRationale: isHook
               ? 'Real NASA 4K SDO solar footage immediately grounds viewer in awe and cosmic scale.'
-              : 'Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.',
-            visualObjective: `Establish visual anchor for ${section.sectionType.toLowerCase()}`,
-            narrationSnippet: section.voiceoverText.slice(0, section.voiceoverText.length / 2),
+              : isPremise
+              ? 'Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.'
+              : isConflict
+              ? 'Hubble Ultra Deep Field footage visualizes true cosmic darkness in the absence of sunlight.'
+              : isExplanation
+              ? 'Real NASA Earth footage with atmospheric glow establishes baseline before freezing.'
+              : 'Deep void visual establishes the scale of the subterranean oceanic abyss.',
+            visualObjective: shot1Objective,
+            narrationSnippet: section.voiceoverText.slice(0, Math.floor(section.voiceoverText.length / 2)),
             cameraMovement: 'Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake',
-            subjectAction: 'Solar corona flares pulsing outward into vacuum',
+            subjectAction: isHook ? 'Solar corona flares pulsing outward into vacuum' : 'Space-time mesh curving under massive body',
             transitionIn: sceneIdx === 0 ? 'FADE_IN_FROM_BLACK' : 'CROSS_DISSOLVE_12F',
             transitionOut: 'HARD_CUT',
             soundCue: section.audioCues[0] || 'Atmospheric sub-bass drone',
-            screenTextOrDiagram: isHook ? '[T - 08:20] SPEED OF LIGHT HORIZON' : undefined,
+            screenTextOrDiagram: shot1Hud,
             continuityReferenceId: `anchor-${sceneIdx + 1}`,
           },
           {
@@ -57,14 +102,14 @@ export class StoryboardAgent implements IAgent<{ script: ScriptType }, Storyboar
             durationSeconds: shotDuration2,
             visualType: isClimax ? ('VECTOR_ANIMATION' as const) : isResolution ? ('MOTION_GRAPHICS' as const) : ('AI_IMAGE' as const),
             visualDecisionRationale: 'Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.',
-            visualObjective: `Demonstrate physical consequence of ${section.sectionType.toLowerCase()}`,
-            narrationSnippet: section.voiceoverText.slice(section.voiceoverText.length / 2),
+            visualObjective: shot2Objective,
+            narrationSnippet: section.voiceoverText.slice(Math.floor(section.voiceoverText.length / 2)),
             cameraMovement: 'Pan left-to-right across vector trajectory line',
             subjectAction: 'Orbital trail stretching into linear tangent vector',
             transitionIn: 'HARD_CUT',
             transitionOut: 'CROSS_DISSOLVE_12F',
             soundCue: section.audioCues[1] || 'Subtle spatial radar beep',
-            screenTextOrDiagram: 'VELOCITY: 30 KM/S // INTERSTELLAR TANGENT',
+            screenTextOrDiagram: shot2Hud,
             continuityReferenceId: `anchor-${sceneIdx + 1}`,
           }
         ]

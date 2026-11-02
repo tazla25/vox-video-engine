@@ -1,16 +1,16 @@
 {
   "projectId": "what-happens-if-the-sun-disapp-mvz0tfzr",
   "fps": 60,
-  "totalFrames": 7804,
-  "width": 1920,
-  "height": 1080,
+  "totalFrames": 12777,
+  "width": 1080,
+  "height": 1920,
   "clips": [
     {
       "clipId": "clip-scene-1-shot-1",
       "shotId": "scene-1-shot-1",
       "sceneId": "scene-1",
       "startFrame": 0,
-      "durationInFrames": 542,
+      "durationInFrames": 1010,
       "assetRef": "public/assets/sun_broll.mp4",
       "visualType": "REAL_FOOTAGE",
       "layerIndex": 1,
@@ -20,15 +20,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake"
+      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+      "screenTextOrDiagram": "LIGHT-SPEED HORIZON // 8 MIN 20 SEC"
     },
     {
       "clipId": "clip-scene-1-shot-2",
       "shotId": "scene-1-shot-2",
       "sceneId": "scene-1",
-      "startFrame": 542,
-      "durationInFrames": 573,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 1010,
+      "durationInFrames": 1070,
+      "assetRef": "public/assets/generated-scene-1-shot-2.svg",
       "visualType": "AI_IMAGE",
       "layerIndex": 1,
       "transform": {
@@ -37,14 +38,15 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Pan left-to-right across vector trajectory line"
+      "motionEffect": "Pan left-to-right across vector trajectory line",
+      "screenTextOrDiagram": "GRAVITATIONAL WAVE PROPAGATION: c"
     },
     {
       "clipId": "clip-scene-2-shot-1",
       "shotId": "scene-2-shot-1",
       "sceneId": "scene-2",
-      "startFrame": 1115,
-      "durationInFrames": 701,
+      "startFrame": 2080,
+      "durationInFrames": 1129,
       "assetRef": "public/assets/diagram-scene-2-shot-1.svg",
       "visualType": "MOTION_GRAPHICS",
       "layerIndex": 1,
@@ -54,15 +56,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake"
+      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+      "screenTextOrDiagram": "GENERAL RELATIVITY // SPACETIME CURVATURE"
     },
     {
       "clipId": "clip-scene-2-shot-2",
       "shotId": "scene-2-shot-2",
       "sceneId": "scene-2",
-      "startFrame": 1816,
-      "durationInFrames": 733,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 3209,
+      "durationInFrames": 1248,
+      "assetRef": "public/assets/generated-scene-2-shot-2.svg",
       "visualType": "AI_IMAGE",
       "layerIndex": 1,
       "transform": {
@@ -71,15 +74,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Pan left-to-right across vector trajectory line"
+      "motionEffect": "Pan left-to-right across vector trajectory line",
+      "screenTextOrDiagram": "PHOTON TRAJECTORY // 299,792 KM/S"
     },
     {
       "clipId": "clip-scene-3-shot-1",
       "shotId": "scene-3-shot-1",
       "sceneId": "scene-3",
-      "startFrame": 2549,
-      "durationInFrames": 701,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 4457,
+      "durationInFrames": 1070,
+      "assetRef": "public/assets/void_broll.mp4",
       "visualType": "REAL_FOOTAGE",
       "layerIndex": 1,
       "transform": {
@@ -88,15 +92,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake"
+      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+      "screenTextOrDiagram": "TOTAL BLACKOUT // ZERO REFLECTED LUNAR ALBEDO"
     },
     {
       "clipId": "clip-scene-3-shot-2",
       "shotId": "scene-3-shot-2",
       "sceneId": "scene-3",
-      "startFrame": 3250,
-      "durationInFrames": 733,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 5527,
+      "durationInFrames": 1189,
+      "assetRef": "public/assets/generated-scene-3-shot-2.svg",
       "visualType": "AI_IMAGE",
       "layerIndex": 1,
       "transform": {
@@ -105,15 +110,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Pan left-to-right across vector trajectory line"
+      "motionEffect": "Pan left-to-right across vector trajectory line",
+      "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT"
     },
     {
       "clipId": "clip-scene-4-shot-1",
       "shotId": "scene-4-shot-1",
       "sceneId": "scene-4",
-      "startFrame": 3983,
-      "durationInFrames": 764,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 6716,
+      "durationInFrames": 1010,
+      "assetRef": "public/assets/earth_broll.mp4",
       "visualType": "REAL_FOOTAGE",
       "layerIndex": 1,
       "transform": {
@@ -122,15 +128,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake"
+      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+      "screenTextOrDiagram": "THERMAL DECAY // SURFACE T: -73°C"
     },
     {
       "clipId": "clip-scene-4-shot-2",
       "shotId": "scene-4-shot-2",
       "sceneId": "scene-4",
-      "startFrame": 4747,
-      "durationInFrames": 828,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 7726,
+      "durationInFrames": 1129,
+      "assetRef": "public/assets/generated-scene-4-shot-2.svg",
       "visualType": "AI_IMAGE",
       "layerIndex": 1,
       "transform": {
@@ -139,15 +146,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Pan left-to-right across vector trajectory line"
+      "motionEffect": "Pan left-to-right across vector trajectory line",
+      "screenTextOrDiagram": "GLOBAL CRYPT // SURFACE ICE: 1.0 KM"
     },
     {
       "clipId": "clip-scene-5-shot-1",
       "shotId": "scene-5-shot-1",
       "sceneId": "scene-5",
-      "startFrame": 5575,
-      "durationInFrames": 605,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 8855,
+      "durationInFrames": 1010,
+      "assetRef": "public/assets/void_broll.mp4",
       "visualType": "REAL_FOOTAGE",
       "layerIndex": 1,
       "transform": {
@@ -156,14 +164,15 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake"
+      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+      "screenTextOrDiagram": "ABYSSAL TRENCH // DEPTH: 11,000 M"
     },
     {
       "clipId": "clip-scene-5-shot-2",
       "shotId": "scene-5-shot-2",
       "sceneId": "scene-5",
-      "startFrame": 6180,
-      "durationInFrames": 669,
+      "startFrame": 9865,
+      "durationInFrames": 1129,
       "assetRef": "public/assets/diagram-scene-5-shot-2.svg",
       "visualType": "VECTOR_ANIMATION",
       "layerIndex": 1,
@@ -173,15 +182,16 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Pan left-to-right across vector trajectory line"
+      "motionEffect": "Pan left-to-right across vector trajectory line",
+      "screenTextOrDiagram": "GEOTHERMAL POWER: 47 TW // CORE METABOLISM"
     },
     {
       "clipId": "clip-scene-6-shot-1",
       "shotId": "scene-6-shot-1",
       "sceneId": "scene-6",
-      "startFrame": 6849,
-      "durationInFrames": 446,
-      "assetRef": "public/assets/sun_broll.mp4",
+      "startFrame": 10994,
+      "durationInFrames": 832,
+      "assetRef": "public/assets/earth_broll.mp4",
       "visualType": "REAL_FOOTAGE",
       "layerIndex": 1,
       "transform": {
@@ -190,14 +200,15 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake"
+      "motionEffect": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+      "screenTextOrDiagram": "ROGUE PLANET ARK // ORION SPUR DRIFT"
     },
     {
       "clipId": "clip-scene-6-shot-2",
       "shotId": "scene-6-shot-2",
       "sceneId": "scene-6",
-      "startFrame": 7295,
-      "durationInFrames": 509,
+      "startFrame": 11826,
+      "durationInFrames": 951,
       "assetRef": "public/assets/diagram-scene-6-shot-2.svg",
       "visualType": "MOTION_GRAPHICS",
       "layerIndex": 1,
@@ -207,9 +218,10 @@
         "y": 0,
         "opacity": 1
       },
-      "motionEffect": "Pan left-to-right across vector trajectory line"
+      "motionEffect": "Pan left-to-right across vector trajectory line",
+      "screenTextOrDiagram": "LIFE ENDURANCE // TIMELINE: 5 BILLION YEARS"
     }
   ],
   "audioManifestRef": "audio-manifest.json",
-  "createdAt": "2026-11-02T08:53:15.271Z"
+  "createdAt": "2026-11-02T11:13:09.852Z"
 }

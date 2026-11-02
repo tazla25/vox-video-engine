@@ -73,20 +73,41 @@ export class EditorAndSubtitleAgent implements IAgent<{ storyboard: StoryboardTy
       const diagramPath = `public/assets/diagram-${shot.shotId}.svg`;
       const generatedPath = `public/assets/generated-${shot.shotId}.svg`;
 
-      if (fs.existsSync(path.resolve(process.cwd(), diagramPath))) {
+      // Check if project asset-manifest maps this shot
+      const manifestPath = path.join(context.projectDir, 'asset-manifest.json');
+      let manifestAssetPath: string | undefined;
+      if (fs.existsSync(manifestPath)) {
+        try {
+          const mData = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+          const found = mData.assets?.find((a: any) => a.shotId === shot.shotId);
+          if (found && found.localPath) {
+            manifestAssetPath = found.localPath;
+          }
+        } catch {}
+      }
+
+      if (manifestAssetPath && fs.existsSync(path.resolve(process.cwd(), manifestAssetPath))) {
+        assetRef = manifestAssetPath;
+      } else if (fs.existsSync(path.resolve(process.cwd(), diagramPath))) {
         assetRef = diagramPath;
       } else if (fs.existsSync(path.resolve(process.cwd(), generatedPath))) {
         assetRef = generatedPath;
-      } else if (shot.visualObjective.toLowerCase().includes('earth')) {
-        assetRef = 'public/assets/earth_broll.mp4';
-      } else if (
-        shot.visualObjective.toLowerCase().includes('void') ||
-        shot.visualObjective.toLowerCase().includes('dark') ||
-        shot.visualObjective.toLowerCase().includes('space')
-      ) {
-        assetRef = 'public/assets/void_broll.mp4';
       } else {
-        assetRef = 'public/assets/sun_broll.mp4';
+        const objLower = shot.visualObjective.toLowerCase();
+        if (shot.shotId.includes('scene-4') || shot.shotId.includes('scene-6') || objLower.includes('earth') || objLower.includes('planet')) {
+          assetRef = 'public/assets/earth_broll.mp4';
+        } else if (
+          shot.shotId.includes('scene-3') ||
+          shot.shotId.includes('scene-5') ||
+          objLower.includes('void') ||
+          objLower.includes('dark') ||
+          objLower.includes('space') ||
+          objLower.includes('abyss')
+        ) {
+          assetRef = 'public/assets/void_broll.mp4';
+        } else {
+          assetRef = 'public/assets/sun_broll.mp4';
+        }
       }
 
       clips.push({
@@ -105,6 +126,7 @@ export class EditorAndSubtitleAgent implements IAgent<{ storyboard: StoryboardTy
           opacity: 1.0,
         },
         motionEffect: shot.cameraMovement,
+        screenTextOrDiagram: shot.screenTextOrDiagram,
       });
 
       currentFrame += shotDurationFrames;
@@ -128,9 +150,34 @@ export class EditorAndSubtitleAgent implements IAgent<{ storyboard: StoryboardTy
     fs.mkdirSync(outputDir, { recursive: true });
     fs.writeFileSync(path.join(outputDir, 'timeline.json'), JSON.stringify(validated, null, 2), 'utf8');
 
-    // Also write to public/ for Remotion composition access
-    const publicTimelinePath = path.join(process.cwd(), 'public', 'timeline.json');
-    fs.writeFileSync(publicTimelinePath, JSON.stringify(validated, null, 2), 'utf8');
+    // Generate comprehensive render-props for project
+    let projectCaptions = [];
+    const captionsPath = path.join(process.cwd(), 'public', 'captions.json');
+    if (fs.existsSync(captionsPath)) {
+      try {
+        projectCaptions = JSON.parse(fs.readFileSync(captionsPath, 'utf8'));
+      } catch {}
+    }
+
+    const renderProps = {
+      projectId: context.projectId,
+      timeline: validated,
+      captions: projectCaptions,
+      audio: {
+        narration: 'narration.mp3',
+        ambient: 'ambient_drone.mp3',
+      },
+    };
+    fs.writeFileSync(path.join(outputDir, 'render-props.json'), JSON.stringify(renderProps, null, 2), 'utf8');
+
+    // Only update public/ global preview if not running inside isolated test
+    const isTestEnvironment = context.projectId.includes('test') || context.projectDir.includes('test');
+    if (!isTestEnvironment) {
+      const publicTimelinePath = path.join(process.cwd(), 'public', 'timeline.json');
+      fs.writeFileSync(publicTimelinePath, JSON.stringify(validated, null, 2), 'utf8');
+      const publicPropsPath = path.join(process.cwd(), 'public', 'render-props.json');
+      fs.writeFileSync(publicPropsPath, JSON.stringify(renderProps, null, 2), 'utf8');
+    }
 
     return {
       success: true,

@@ -290,27 +290,33 @@ export class QualityAssuranceAgent implements IAgent<{ videoPath?: string; scrip
           responsibleAgent: 'EDITOR_SUBTITLE',
         });
       } else {
+        const vStream = (ffprobeMetadata.streams as Array<Record<string, unknown>>)?.find(s => s.codec_type === 'video');
+        const actualRes = vStream ? `${vStream.width}x${vStream.height}` : 'UNKNOWN';
+        const expectedRes = context.config.aspectRatio === '9:16' ? '1080x1920' : `${context.config.resolution.width}x${context.config.resolution.height}`;
         const pass = videoStreamVerified && targetResolutionMatches && blackFramesDetected === 0;
         checks.push({
           category: 'TECHNICAL',
           checkName: 'Container Stream Encoding & Resolution Compatibility',
           passed: pass,
           status: pass ? 'PASS' : 'FAIL',
-          scoreOrValue: `${context.config.resolution.width}x${context.config.resolution.height}`,
-          threshold: `${context.config.resolution.width}x${context.config.resolution.height}`,
-          evidence: `FFprobe verified video stream: ${targetResolutionMatches ? 'Matches' : 'Mismatch'} target resolution, black frame sections: ${blackFramesDetected}`,
+          scoreOrValue: actualRes,
+          threshold: expectedRes,
+          evidence: pass
+            ? `FFprobe verified video stream: ${actualRes} matches target ${expectedRes}, 0 black frames detected`
+            : `FFprobe inspection failed: Actual resolution ${actualRes} ${targetResolutionMatches ? 'matches' : 'differs from target ' + expectedRes}, black frame sections: ${blackFramesDetected}`,
           responsibleAgent: 'EDITOR_SUBTITLE',
         });
       }
     } else {
       // In pre-render stage, video is not rendered yet -> SKIPPED
+      const expectedRes = context.config.aspectRatio === '9:16' ? '1080x1920' : `${context.config.resolution.width}x${context.config.resolution.height}`;
       checks.push({
         category: 'TECHNICAL',
         checkName: 'Container Stream Encoding & Resolution Compatibility',
         passed: true,
         status: 'SKIPPED',
         scoreOrValue: 'SKIPPED_PRE_RENDER',
-        threshold: `${context.config.resolution.width}x${context.config.resolution.height}`,
+        threshold: expectedRes,
         evidence: 'Pre-render stage: Final video not yet rendered; stream and black-frame probe skipped in pre-production',
         responsibleAgent: 'EDITOR_SUBTITLE',
       });
