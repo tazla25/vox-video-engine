@@ -1,0 +1,255 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+  "totalDurationSeconds": 245,
+  "totalShots": 12,
+  "scenes": [
+    {
+      "sceneId": "scene-1",
+      "sceneNumber": 1,
+      "title": "HOOK: Right now, as you listen to my voic...",
+      "durationSeconds": 35,
+      "shots": [
+        {
+          "shotId": "scene-1-shot-1",
+          "sceneId": "scene-1",
+          "shotNumber": 1,
+          "durationSeconds": 17,
+          "visualType": "REAL_FOOTAGE",
+          "visualDecisionRationale": "Real NASA 4K SDO solar footage immediately grounds viewer in awe and cosmic scale.",
+          "visualObjective": "Establish visual anchor for hook",
+          "narrationSnippet": "Right now, as you listen to my voice, the Sun could have vanished completely from the cosmos. And you would have absolutely no idea. For eight minutes and twenty",
+          "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+          "subjectAction": "Solar corona flares pulsing outward into vacuum",
+          "transitionIn": "FADE_IN_FROM_BLACK",
+          "transitionOut": "HARD_CUT",
+          "soundCue": "Warm cinematic piano",
+          "screenTextOrDiagram": "[T - 08:20] SPEED OF LIGHT HORIZON",
+          "continuityReferenceId": "anchor-1"
+        },
+        {
+          "shotId": "scene-1-shot-2",
+          "sceneId": "scene-1",
+          "shotNumber": 2,
+          "durationSeconds": 18,
+          "visualType": "AI_IMAGE",
+          "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+          "visualObjective": "Demonstrate physical consequence of hook",
+          "narrationSnippet": " seconds, the sky remains radiant, children laugh in the park, and Earth continues its tranquil orbit. But across the void, a silent countdown has already begun.",
+          "cameraMovement": "Pan left-to-right across vector trajectory line",
+          "subjectAction": "Orbital trail stretching into linear tangent vector",
+          "transitionIn": "HARD_CUT",
+          "transitionOut": "CROSS_DISSOLVE_12F",
+          "soundCue": "Subtle low heartbeat bass pulse",
+          "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+          "continuityReferenceId": "anchor-1"
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-2",
+      "sceneNumber": 2,
+      "title": "PREMISE: Why does Earth wait? Because in Ein...",
+      "durationSeconds": 45,
+      "shots": [
+        {
+          "shotId": "scene-2-shot-1",
+          "sceneId": "scene-2",
+          "shotNumber": 1,
+          "durationSeconds": 22,
+          "visualType": "MOTION_GRAPHICS",
+          "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+          "visualObjective": "Establish visual anchor for premise",
+          "narrationSnippet": "Why does Earth wait? Because in Einstein's universe, nothing can travel faster than the speed of light. Not even gravity. The Sun is not just our cosmic furnace; its colossal ",
+          "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+          "subjectAction": "Solar corona flares pulsing outward into vacuum",
+          "transitionIn": "CROSS_DISSOLVE_12F",
+          "transitionOut": "HARD_CUT",
+          "soundCue": "Synth drone rising in pitch",
+          "continuityReferenceId": "anchor-2"
+        },
+        {
+          "shotId": "scene-2-shot-2",
+          "sceneId": "scene-2",
+          "shotNumber": 2,
+          "durationSeconds": 23,
+          "visualType": "AI_IMAGE",
+          "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+          "visualObjective": "Demonstrate physical consequence of premise",
+          "narrationSnippet": "mass bends the fabric of space-time into a deep gravitational bowl. For five hundred seconds, Earth continues circling a ghost star. Until the final photon strikes your retina.",
+          "cameraMovement": "Pan left-to-right across vector trajectory line",
+          "subjectAction": "Orbital trail stretching into linear tangent vector",
+          "transitionIn": "HARD_CUT",
+          "transitionOut": "CROSS_DISSOLVE_12F",
+          "soundCue": "Clock ticking cadence",
+          "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+          "continuityReferenceId": "anchor-2"
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-3",
+      "sceneNumber": 3,
+      "title": "CORE_CONFLICT: At eight minutes and twenty seconds...",
+      "durationSeconds": 45,
+      "shots": [
+        {
+          "shotId": "scene-3-shot-1",
+          "sceneId": "scene-3",
+          "shotNumber": 1,
+          "durationSeconds": 22,
+          "visualType": "REAL_FOOTAGE",
+          "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+          "visualObjective": "Establish visual anchor for core_conflict",
+          "narrationSnippet": "At eight minutes and twenty seconds, total blackout hits. The Moon instantly disappears from the night sky, robbed of its reflected mirror. But the dark is merely the fir",
+          "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+          "subjectAction": "Solar corona flares pulsing outward into vacuum",
+          "transitionIn": "CROSS_DISSOLVE_12F",
+          "transitionOut": "HARD_CUT",
+          "soundCue": "Metallic impact swoosh",
+          "continuityReferenceId": "anchor-3"
+        },
+        {
+          "shotId": "scene-3-shot-2",
+          "sceneId": "scene-3",
+          "shotNumber": 2,
+          "durationSeconds": 23,
+          "visualType": "AI_IMAGE",
+          "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+          "visualObjective": "Demonstrate physical consequence of core_conflict",
+          "narrationSnippet": "st blow. Without the Sun's gravitational anchor, Earth stops curving. It slingshots in a straight tangential line into deep space at thirty kilometers every single second.",
+          "cameraMovement": "Pan left-to-right across vector trajectory line",
+          "subjectAction": "Orbital trail stretching into linear tangent vector",
+          "transitionIn": "HARD_CUT",
+          "transitionOut": "CROSS_DISSOLVE_12F",
+          "soundCue": "Cold echoing spatial ambience",
+          "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+          "continuityReferenceId": "anchor-3"
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-4",
+      "sceneNumber": 4,
+      "title": "EXPLANATION: Within twenty-four hours, global pa...",
+      "durationSeconds": 50,
+      "shots": [
+        {
+          "shotId": "scene-4-shot-1",
+          "sceneId": "scene-4",
+          "shotNumber": 1,
+          "durationSeconds": 24,
+          "visualType": "REAL_FOOTAGE",
+          "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+          "visualObjective": "Establish visual anchor for explanation",
+          "narrationSnippet": "Within twenty-four hours, global panic collides with physics. Photosynthesis grinds to a dead stop. Within seven days, global surface temperatures plunge below freezing. Within ",
+          "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+          "subjectAction": "Solar corona flares pulsing outward into vacuum",
+          "transitionIn": "CROSS_DISSOLVE_12F",
+          "transitionOut": "HARD_CUT",
+          "soundCue": "Glacial cracking sound effect",
+          "continuityReferenceId": "anchor-4"
+        },
+        {
+          "shotId": "scene-4-shot-2",
+          "sceneId": "scene-4",
+          "shotNumber": 2,
+          "durationSeconds": 26,
+          "visualType": "AI_IMAGE",
+          "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+          "visualObjective": "Demonstrate physical consequence of explanation",
+          "narrationSnippet": "one year, the thermometer reads minus seventy-three degrees Celsius. The surface oceans freeze solid under kilometers of impenetrable ice, sealing off the world in an icy crypt.",
+          "cameraMovement": "Pan left-to-right across vector trajectory line",
+          "subjectAction": "Orbital trail stretching into linear tangent vector",
+          "transitionIn": "HARD_CUT",
+          "transitionOut": "CROSS_DISSOLVE_12F",
+          "soundCue": "Wind howling drone",
+          "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+          "continuityReferenceId": "anchor-4"
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-5",
+      "sceneNumber": 5,
+      "title": "CLIMAX: Yet, deep beneath that armor of ice...",
+      "durationSeconds": 40,
+      "shots": [
+        {
+          "shotId": "scene-5-shot-1",
+          "sceneId": "scene-5",
+          "shotNumber": 1,
+          "durationSeconds": 19,
+          "visualType": "REAL_FOOTAGE",
+          "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+          "visualObjective": "Establish visual anchor for climax",
+          "narrationSnippet": "Yet, deep beneath that armor of ice, Earth harbors a secret. Geothermal energy pulsing from our molten nickel-iron core keeps the deep abyssal oceans liqui",
+          "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+          "subjectAction": "Solar corona flares pulsing outward into vacuum",
+          "transitionIn": "CROSS_DISSOLVE_12F",
+          "transitionOut": "HARD_CUT",
+          "soundCue": "Underwater bubble resonance",
+          "continuityReferenceId": "anchor-5"
+        },
+        {
+          "shotId": "scene-5-shot-2",
+          "sceneId": "scene-5",
+          "shotNumber": 2,
+          "durationSeconds": 21,
+          "visualType": "VECTOR_ANIMATION",
+          "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+          "visualObjective": "Demonstrate physical consequence of climax",
+          "narrationSnippet": "d and warm. Clustering around hydrothermal vents, volcanic extremophiles thrive in volcanic darkness, completely indifferent to the death of the star above.",
+          "cameraMovement": "Pan left-to-right across vector trajectory line",
+          "subjectAction": "Orbital trail stretching into linear tangent vector",
+          "transitionIn": "HARD_CUT",
+          "transitionOut": "CROSS_DISSOLVE_12F",
+          "soundCue": "Warm ethereal string swell",
+          "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+          "continuityReferenceId": "anchor-5"
+        }
+      ]
+    },
+    {
+      "sceneId": "scene-6",
+      "sceneNumber": 6,
+      "title": "RESOLUTION: Billions of years from now, our rog...",
+      "durationSeconds": 30,
+      "shots": [
+        {
+          "shotId": "scene-6-shot-1",
+          "sceneId": "scene-6",
+          "shotNumber": 1,
+          "durationSeconds": 14,
+          "visualType": "REAL_FOOTAGE",
+          "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+          "visualObjective": "Establish visual anchor for resolution",
+          "narrationSnippet": "Billions of years from now, our rogue planet will drift silently through interstellar space—a solitary ark ",
+          "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+          "subjectAction": "Solar corona flares pulsing outward into vacuum",
+          "transitionIn": "CROSS_DISSOLVE_12F",
+          "transitionOut": "HARD_CUT",
+          "soundCue": "Grand cinematic orchestral resolution",
+          "continuityReferenceId": "anchor-6"
+        },
+        {
+          "shotId": "scene-6-shot-2",
+          "sceneId": "scene-6",
+          "shotNumber": 2,
+          "durationSeconds": 16,
+          "visualType": "MOTION_GRAPHICS",
+          "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+          "visualObjective": "Demonstrate physical consequence of resolution",
+          "narrationSnippet": "bearing life across the galaxy. The Sun gave us birth, but our world's inner fire guarantees we will endure.",
+          "cameraMovement": "Pan left-to-right across vector trajectory line",
+          "subjectAction": "Orbital trail stretching into linear tangent vector",
+          "transitionIn": "HARD_CUT",
+          "transitionOut": "CROSS_DISSOLVE_12F",
+          "soundCue": "Fading cosmic drone",
+          "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+          "continuityReferenceId": "anchor-6"
+        }
+      ]
+    }
+  ],
+  "createdAt": "2026-11-02T08:50:21.148Z"
+}

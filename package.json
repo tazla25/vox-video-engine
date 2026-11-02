@@ -1,17 +1,20 @@
 {
   "name": "vox-video-engine",
   "version": "1.0.0",
+  "type": "module",
   "description": "Cloud-rendered Vox-style motion graphics engine powered by Remotion and GitHub Actions",
   "scripts": {
     "dev": "remotion preview src/index.ts",
     "build": "tsc --noEmit",
+    "studio": "node --experimental-strip-types src/studio/cli/index.ts",
     "render": "remotion render src/index.ts VoxShort out/video.mp4"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.260",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "remotion": "^4.0.260"
+    "remotion": "^4.0.260",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/react": "^18.3.12",

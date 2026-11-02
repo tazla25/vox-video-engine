@@ -1,0 +1,37 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0tfzr",
+  "topic": "What happens if the Sun disappears?",
+  "currentStatus": "AWAITING_REVIEW",
+  "completedTasks": [
+    "RESEARCH",
+    "SCRIPTWRITER",
+    "STORY_EDITOR",
+    "ART_DIRECTOR",
+    "STORYBOARD",
+    "ASSET_RESEARCH",
+    "IMAGE_GENERATION",
+    "VIDEO_GENERATION",
+    "ANIMATION",
+    "VOICE_DIRECTOR",
+    "SOUND_DESIGN",
+    "EDITOR_SUBTITLE",
+    "QUALITY_ASSURANCE"
+  ],
+  "pendingTasks": [
+    "HUMAN_APPROVAL",
+    "FINAL_CLOUD_RENDER"
+  ],
+  "qualityStatus": "PASSED",
+  "isAwaitingHumanApproval": true,
+  "generatedOutputs": {
+    "researchReport": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/research-report.json",
+    "script": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/script.json",
+    "visualBible": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/visual-bible.json",
+    "storyboard": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/storyboard.json",
+    "assetManifest": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/asset-manifest.json",
+    "audioManifest": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/audio-manifest.json",
+    "timeline": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/timeline.json",
+    "qaReport": "/data/data/com.termux/files/home/vox-video-engine/projects/what-happens-if-the-sun-disapp-mvz0tfzr/qa-report.json"
+  },
+  "summary": "Pre-production and visual composition successfully completed across 14 specialist roles. Overall QA status: PASSED. Project is parked in AWAITING_REVIEW for human creator approval."
+}

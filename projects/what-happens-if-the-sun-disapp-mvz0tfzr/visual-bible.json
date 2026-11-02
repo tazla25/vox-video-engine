@@ -1,0 +1,57 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0tfzr",
+  "mode": "SCIENCE_EXPLAINER",
+  "colorPalette": {
+    "primary": "#FF5500",
+    "secondary": "#00AAFF",
+    "accent": "#00DFD8",
+    "background": "#05050D",
+    "text": "#F8F9FA",
+    "additionalHues": [
+      "#7928CA",
+      "#FF0080",
+      "#111122"
+    ]
+  },
+  "typography": {
+    "headerFont": "Inter, system-ui, sans-serif",
+    "bodyFont": "Inter, system-ui, sans-serif",
+    "captionFont": "Inter, system-ui, sans-serif",
+    "codeOrDataFont": "JetBrains Mono, Courier New, monospace"
+  },
+  "lightingAndAtmosphere": "High-contrast chiaroscuro. Intense rim-lighting against impenetrable cosmic black. Zero flat generic gray fills. Volumetric coronal glow transitioning into cold blue abyss.",
+  "compositionGuidelines": [
+    "Rule of thirds with strong diagonal energy vectors.",
+    "Negative space ratio: at least 45% of the frame dedicated to deep dark cosmos for psychological scale.",
+    "Subtle analog film grain overlay (opacity 0.04 to 0.06) to destroy sterile digital CGI artifacts.",
+    "Dynamic focal depth: shallow depth of field on foreground telemetry data cards."
+  ],
+  "characterAndEntityStyles": [
+    {
+      "entityName": "The Sun",
+      "visualDescription": "Colossal roiling magnetic plasma sphere with active solar flares, coronal loops, and coronal mass ejections.",
+      "keyTraits": [
+        "Blinding core luminosity",
+        "Solar granules",
+        "Ultraviolet magnetic tendrils"
+      ]
+    },
+    {
+      "entityName": "Earth",
+      "visualDescription": "Vibrant marble with delicate blue atmospheric halo, swirling cloud systems, and deep sapphire oceans, progressively freezing into a crystalline white shield.",
+      "keyTraits": [
+        "Thin fragile atmosphere",
+        "City night lights",
+        "Glacial frost line creeping from poles to equator"
+      ]
+    }
+  ],
+  "motionLanguage": "Cinematic inertia. Continuous subtle camera motion (never dead static). Spring physics with damping ratio 0.82 for smooth human-like deceleration. Camera tilts up to 12 degrees on dramatic narrative revelations.",
+  "bannedTropes": [
+    "Static slideshow Ken Burns zooms without layered parallax.",
+    "Generic colorful cartoon clip-art in serious scientific topics.",
+    "Unstyled default sans-serif subtitles centered in boring white boxes.",
+    "Stock footage watermarks or low-resolution compressed artifacts."
+  ],
+  "createdAt": "2026-11-02T08:52:32.770Z"
+}

@@ -1,0 +1,43 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0tfzr",
+  "narration": {
+    "trackId": "track-narration-master",
+    "audioPath": "public/narration.mp3",
+    "durationSeconds": 15,
+    "voiceIdOrModel": "en-US-ChristopherNeural",
+    "wordTimestamps": []
+  },
+  "backgroundMusic": [
+    {
+      "trackId": "music-atmospheric-drone",
+      "audioPath": "public/ambient_drone.mp3",
+      "title": "Deep Cosmic Resonance Drone",
+      "license": "Royalty-Free Commercial License (Zero Copyright ID Claim)",
+      "startSeconds": 0,
+      "durationSeconds": 15,
+      "targetVolume": 0.12,
+      "fadeInSeconds": 2,
+      "fadeOutSeconds": 3.5
+    }
+  ],
+  "soundEffects": [
+    {
+      "cueId": "sfx-intro-sub-drop",
+      "audioPath": "public/assets/sub_drop.mp3",
+      "name": "Low Frequency Sub-Bass Hit",
+      "triggerTimeSeconds": 8.33,
+      "durationSeconds": 3.5,
+      "volume": 0.45
+    },
+    {
+      "cueId": "sfx-tangent-woosh",
+      "audioPath": "public/assets/woosh.mp3",
+      "name": "Interstellar Ejection Woosh",
+      "triggerTimeSeconds": 45,
+      "durationSeconds": 2,
+      "volume": 0.4
+    }
+  ],
+  "masterVolumeLoudnessLufs": -14,
+  "createdAt": "2026-11-02T08:53:15.172Z"
+}

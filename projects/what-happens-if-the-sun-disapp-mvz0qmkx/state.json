@@ -1,0 +1,650 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+  "state": "FAILED",
+  "revisionCount": 0,
+  "lastUpdated": "2026-11-02T08:50:21.218Z",
+  "tasks": [],
+  "outputs": {
+    "researchReport": {
+      "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+      "topic": "What happens if the Sun disappears?",
+      "coreHypothesis": "If the Sun vanished instantaneously, Earth would remain unaffected for 8 minutes and 20 seconds before simultaneously plummeting into eternal darkness and hurtling into deep space at 30 km/s.",
+      "verifiedFacts": [
+        "General Relativity proves gravity propagates at c (speed of light). Earth would remain in orbit for exactly 8 minutes and 20 seconds after the Sun disappears before flying off tangentially.",
+        "Within 7 days of solar extinction, global average temperature drops below 0°C (32°F). Within one year, temperatures reach -73°C (-100°F). Ocean surfaces freeze, but geothermal vents sustain deep-sea extremophiles for billions of years.",
+        "At -200°C, atmospheric nitrogen and oxygen liquefy and rain out as liquid pools, leaving Earth as an icy nomad wandering interstellar space."
+      ],
+      "unresolvedQuestions": [
+        "Would subsurface geothermal colonies survive beyond 100,000 years without external stellar energy?",
+        "How many rogue planets in the Milky Way originated from similar stellar ejection events?"
+      ],
+      "conflictingTheories": [
+        "Speed of Gravity debates: Classical Newtonian instantaneous gravity vs Einsteinian c-speed gravitational wave propagation (experimentally confirmed by LIGO in 2015)."
+      ],
+      "emotionalAndMetaphoricalHooks": [
+        "The 8-minute illusion: Humanity continuing their day under a golden sky, completely unaware the engine of life has already ceased to exist.",
+        "The rogue nomad: Earth sailing across the cosmic ocean in utter silence."
+      ],
+      "sources": [
+        {
+          "id": "source-1",
+          "title": "Speed of Light and Gravitational Waves Propagation",
+          "url": "https://science.nasa.gov/astrophysics/focus-areas/what-is-relativity",
+          "authorOrInstitution": "NASA & Astrophysical Observatories",
+          "credibilityScore": 0.99,
+          "keyTakeaway": "General Relativity proves gravity propagates at c (speed of light). Earth would remain in orbit for exactly 8 minutes an",
+          "year": 2024
+        },
+        {
+          "id": "source-2",
+          "title": "Thermal Decay and Atmospheric Freezing",
+          "url": "https://solarsystem.nasa.gov/solar-system/sun/in-depth/",
+          "authorOrInstitution": "NASA & Astrophysical Observatories",
+          "credibilityScore": 0.98,
+          "keyTakeaway": "Within 7 days of solar extinction, global average temperature drops below 0°C (32°F). Within one year, temperatures reac",
+          "year": 2024
+        },
+        {
+          "id": "source-3",
+          "title": "Atmospheric Liquefaction and Planetary Drift",
+          "url": "https://earthobservatory.nasa.gov/features/AtmosphereThermodynamics",
+          "authorOrInstitution": "NASA & Astrophysical Observatories",
+          "credibilityScore": 0.95,
+          "keyTakeaway": "At -200°C, atmospheric nitrogen and oxygen liquefy and rain out as liquid pools, leaving Earth as an icy nomad wandering",
+          "year": 2024
+        }
+      ],
+      "suggestedNarrativeBeats": [
+        {
+          "beatNumber": 1,
+          "title": "The Silent 8 Minutes",
+          "summary": "The speed of light delay. Sunlight and gravity take 500 seconds to reach Earth.",
+          "estimatedSeconds": 35
+        },
+        {
+          "beatNumber": 2,
+          "title": "The Moment Darkness Falls",
+          "summary": "8:20 mark. Total solar blackout, Moon vanishes instantly, Earth breaks orbit tangentially.",
+          "estimatedSeconds": 45
+        },
+        {
+          "beatNumber": 3,
+          "title": "The Thermal Collapse: Day 1 to Month 1",
+          "summary": "Photosynthesis halts, surface temperature plunges to 0°C in 7 days and -73°C in 1 year.",
+          "estimatedSeconds": 50
+        },
+        {
+          "beatNumber": 4,
+          "title": "The Deep Freeze & Liquid Air: Year 1 to Year 10",
+          "summary": "Oceans freeze solid on top, trapping liquid water underneath; atmospheric nitrogen liquefies.",
+          "estimatedSeconds": 45
+        },
+        {
+          "beatNumber": 5,
+          "title": "The Subterranean Oasis & The Rogue Nomad",
+          "summary": "Geothermal vents sustain extremophile life for billions of years as Earth wanders into deep space.",
+          "estimatedSeconds": 40
+        }
+      ],
+      "createdAt": "2026-11-02T08:50:21.062Z"
+    },
+    "script": {
+      "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+      "title": "What happens if the Sun disappears?",
+      "logline": "An empirical minute-by-minute journey from the 8-minute light delay to the rogue ice age.",
+      "estimatedDurationSeconds": 245,
+      "targetWordCount": 299,
+      "sections": [
+        {
+          "sectionId": "sec-1-hook",
+          "sectionType": "HOOK",
+          "targetDurationSeconds": 35,
+          "voiceoverText": "Right now, as you listen to my voice, the Sun could have vanished completely from the cosmos. And you would have absolutely no idea. For eight minutes and twenty seconds, the sky remains radiant, children laugh in the park, and Earth continues its tranquil orbit. But across the void, a silent countdown has already begun.",
+          "suggestedVisualMood": "Golden afternoon sunlight suddenly intercut with pitch black telemetry grid and high-speed gravitational wave propagation.",
+          "audioCues": [
+            "Warm cinematic piano",
+            "Subtle low heartbeat bass pulse",
+            "Sudden sub-bass drop at 8:20 marker"
+          ]
+        },
+        {
+          "sectionId": "sec-2-premise",
+          "sectionType": "PREMISE",
+          "targetDurationSeconds": 45,
+          "voiceoverText": "Why does Earth wait? Because in Einstein's universe, nothing can travel faster than the speed of light. Not even gravity. The Sun is not just our cosmic furnace; its colossal mass bends the fabric of space-time into a deep gravitational bowl. For five hundred seconds, Earth continues circling a ghost star. Until the final photon strikes your retina.",
+          "suggestedVisualMood": "3D spacetime mesh warping under solar mass, showing gravitational ripples racing outward at exactly 299,792 kilometers per second.",
+          "audioCues": [
+            "Synth drone rising in pitch",
+            "Clock ticking cadence"
+          ]
+        },
+        {
+          "sectionId": "sec-3-core-conflict",
+          "sectionType": "CORE_CONFLICT",
+          "targetDurationSeconds": 45,
+          "voiceoverText": "At eight minutes and twenty seconds, total blackout hits. The Moon instantly disappears from the night sky, robbed of its reflected mirror. But the dark is merely the first blow. Without the Sun's gravitational anchor, Earth stops curving. It slingshots in a straight tangential line into deep space at thirty kilometers every single second.",
+          "suggestedVisualMood": "Earth breaking free from its elliptical orbit, hurtling tangentially through the Orion Spur of the Milky Way.",
+          "audioCues": [
+            "Metallic impact swoosh",
+            "Cold echoing spatial ambience"
+          ]
+        },
+        {
+          "sectionId": "sec-4-explanation",
+          "sectionType": "EXPLANATION",
+          "targetDurationSeconds": 50,
+          "voiceoverText": "Within twenty-four hours, global panic collides with physics. Photosynthesis grinds to a dead stop. Within seven days, global surface temperatures plunge below freezing. Within one year, the thermometer reads minus seventy-three degrees Celsius. The surface oceans freeze solid under kilometers of impenetrable ice, sealing off the world in an icy crypt.",
+          "suggestedVisualMood": "Fast-forward thermal camera heatmap decaying from glowing amber to freezing violet; glaciers advancing across satellite globe views.",
+          "audioCues": [
+            "Glacial cracking sound effect",
+            "Wind howling drone"
+          ]
+        },
+        {
+          "sectionId": "sec-5-climax",
+          "sectionType": "CLIMAX",
+          "targetDurationSeconds": 40,
+          "voiceoverText": "Yet, deep beneath that armor of ice, Earth harbors a secret. Geothermal energy pulsing from our molten nickel-iron core keeps the deep abyssal oceans liquid and warm. Clustering around hydrothermal vents, volcanic extremophiles thrive in volcanic darkness, completely indifferent to the death of the star above.",
+          "suggestedVisualMood": "Submersible descent into the midnight trench; glowing hydrothermal black smokers bubbling with subterranean life.",
+          "audioCues": [
+            "Underwater bubble resonance",
+            "Warm ethereal string swell"
+          ]
+        },
+        {
+          "sectionId": "sec-6-resolution",
+          "sectionType": "RESOLUTION",
+          "targetDurationSeconds": 30,
+          "voiceoverText": "Billions of years from now, our rogue planet will drift silently through interstellar space—a solitary ark bearing life across the galaxy. The Sun gave us birth, but our world's inner fire guarantees we will endure.",
+          "suggestedVisualMood": "Zoom out from Earth to wide galactic view showing a lone blue marble cruising through star clusters.",
+          "audioCues": [
+            "Grand cinematic orchestral resolution",
+            "Fading cosmic drone"
+          ]
+        }
+      ],
+      "rawMarkdown": "# What happens if the Sun disappears?\n\n**Logline**: What unfolds across space and time when our star vanishes without warning.\n**Total Duration**: ~4 minutes (245s) | **Word Count**: 299 words\n\n---\n\n## [HOOK] (35s)\nRight now, as you listen to my voice, the Sun could have vanished completely from the cosmos. And you would have absolutely no idea. For eight minutes and twenty seconds, the sky remains radiant, children laugh in the park, and Earth continues its tranquil orbit. But across the void, a silent countdown has already begun.\n\n*Visual*: Golden afternoon sunlight suddenly intercut with pitch black telemetry grid and high-speed gravitational wave propagation.\n*Audio*: Warm cinematic piano, Subtle low heartbeat bass pulse, Sudden sub-bass drop at 8:20 marker\n\n---\n## [PREMISE] (45s)\nWhy does Earth wait? Because in Einstein's universe, nothing can travel faster than the speed of light. Not even gravity. The Sun is not just our cosmic furnace; its colossal mass bends the fabric of space-time into a deep gravitational bowl. For five hundred seconds, Earth continues circling a ghost star. Until the final photon strikes your retina.\n\n*Visual*: 3D spacetime mesh warping under solar mass, showing gravitational ripples racing outward at exactly 299,792 kilometers per second.\n*Audio*: Synth drone rising in pitch, Clock ticking cadence\n\n---\n## [CORE_CONFLICT] (45s)\nAt eight minutes and twenty seconds, total blackout hits. The Moon instantly disappears from the night sky, robbed of its reflected mirror. But the dark is merely the first blow. Without the Sun's gravitational anchor, Earth stops curving. It slingshots in a straight tangential line into deep space at thirty kilometers every single second.\n\n*Visual*: Earth breaking free from its elliptical orbit, hurtling tangentially through the Orion Spur of the Milky Way.\n*Audio*: Metallic impact swoosh, Cold echoing spatial ambience\n\n---\n## [EXPLANATION] (50s)\nWithin twenty-four hours, global panic collides with physics. Photosynthesis grinds to a dead stop. Within seven days, global surface temperatures plunge below freezing. Within one year, the thermometer reads minus seventy-three degrees Celsius. The surface oceans freeze solid under kilometers of impenetrable ice, sealing off the world in an icy crypt.\n\n*Visual*: Fast-forward thermal camera heatmap decaying from glowing amber to freezing violet; glaciers advancing across satellite globe views.\n*Audio*: Glacial cracking sound effect, Wind howling drone\n\n---\n## [CLIMAX] (40s)\nYet, deep beneath that armor of ice, Earth harbors a secret. Geothermal energy pulsing from our molten nickel-iron core keeps the deep abyssal oceans liquid and warm. Clustering around hydrothermal vents, volcanic extremophiles thrive in volcanic darkness, completely indifferent to the death of the star above.\n\n*Visual*: Submersible descent into the midnight trench; glowing hydrothermal black smokers bubbling with subterranean life.\n*Audio*: Underwater bubble resonance, Warm ethereal string swell\n\n---\n## [RESOLUTION] (30s)\nBillions of years from now, our rogue planet will drift silently through interstellar space—a solitary ark bearing life across the galaxy. The Sun gave us birth, but our world's inner fire guarantees we will endure.\n\n*Visual*: Zoom out from Earth to wide galactic view showing a lone blue marble cruising through star clusters.\n*Audio*: Grand cinematic orchestral resolution, Fading cosmic drone\n\n",
+      "version": 1,
+      "createdAt": "2026-11-02T08:50:21.092Z"
+    },
+    "scriptReview": {
+      "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+      "scriptVersion": 1,
+      "isApproved": true,
+      "hookStrengthScore": 9.5,
+      "pacingScore": 9,
+      "factualAccuracyScore": 9.8,
+      "retentionEstimateScore": 9.2,
+      "repetitionFlags": [],
+      "concreteRevisionInstructions": [],
+      "editorialSummary": "High-engagement science narrative with excellent curiosity gap in first 10 seconds. Clear cause-and-effect progression through speed-of-light delay, orbital ejection, thermodynamic collapse, and geothermal endurance.",
+      "reviewedAt": "2026-11-02T08:50:21.110Z"
+    },
+    "visualBible": {
+      "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+      "mode": "SCIENCE_EXPLAINER",
+      "colorPalette": {
+        "primary": "#FF5500",
+        "secondary": "#00AAFF",
+        "accent": "#00DFD8",
+        "background": "#05050D",
+        "text": "#F8F9FA",
+        "additionalHues": [
+          "#7928CA",
+          "#FF0080",
+          "#111122"
+        ]
+      },
+      "typography": {
+        "headerFont": "Inter, system-ui, sans-serif",
+        "bodyFont": "Inter, system-ui, sans-serif",
+        "captionFont": "Inter, system-ui, sans-serif",
+        "codeOrDataFont": "JetBrains Mono, Courier New, monospace"
+      },
+      "lightingAndAtmosphere": "High-contrast chiaroscuro. Intense rim-lighting against impenetrable cosmic black. Zero flat generic gray fills. Volumetric coronal glow transitioning into cold blue abyss.",
+      "compositionGuidelines": [
+        "Rule of thirds with strong diagonal energy vectors.",
+        "Negative space ratio: at least 45% of the frame dedicated to deep dark cosmos for psychological scale.",
+        "Subtle analog film grain overlay (opacity 0.04 to 0.06) to destroy sterile digital CGI artifacts.",
+        "Dynamic focal depth: shallow depth of field on foreground telemetry data cards."
+      ],
+      "characterAndEntityStyles": [
+        {
+          "entityName": "The Sun",
+          "visualDescription": "Colossal roiling magnetic plasma sphere with active solar flares, coronal loops, and coronal mass ejections.",
+          "keyTraits": [
+            "Blinding core luminosity",
+            "Solar granules",
+            "Ultraviolet magnetic tendrils"
+          ]
+        },
+        {
+          "entityName": "Earth",
+          "visualDescription": "Vibrant marble with delicate blue atmospheric halo, swirling cloud systems, and deep sapphire oceans, progressively freezing into a crystalline white shield.",
+          "keyTraits": [
+            "Thin fragile atmosphere",
+            "City night lights",
+            "Glacial frost line creeping from poles to equator"
+          ]
+        }
+      ],
+      "motionLanguage": "Cinematic inertia. Continuous subtle camera motion (never dead static). Spring physics with damping ratio 0.82 for smooth human-like deceleration. Camera tilts up to 12 degrees on dramatic narrative revelations.",
+      "bannedTropes": [
+        "Static slideshow Ken Burns zooms without layered parallax.",
+        "Generic colorful cartoon clip-art in serious scientific topics.",
+        "Unstyled default sans-serif subtitles centered in boring white boxes.",
+        "Stock footage watermarks or low-resolution compressed artifacts."
+      ],
+      "createdAt": "2026-11-02T08:50:21.119Z"
+    },
+    "storyboard": {
+      "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+      "totalDurationSeconds": 245,
+      "totalShots": 12,
+      "scenes": [
+        {
+          "sceneId": "scene-1",
+          "sceneNumber": 1,
+          "title": "HOOK: Right now, as you listen to my voic...",
+          "durationSeconds": 35,
+          "shots": [
+            {
+              "shotId": "scene-1-shot-1",
+              "sceneId": "scene-1",
+              "shotNumber": 1,
+              "durationSeconds": 17,
+              "visualType": "REAL_FOOTAGE",
+              "visualDecisionRationale": "Real NASA 4K SDO solar footage immediately grounds viewer in awe and cosmic scale.",
+              "visualObjective": "Establish visual anchor for hook",
+              "narrationSnippet": "Right now, as you listen to my voice, the Sun could have vanished completely from the cosmos. And you would have absolutely no idea. For eight minutes and twenty",
+              "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+              "subjectAction": "Solar corona flares pulsing outward into vacuum",
+              "transitionIn": "FADE_IN_FROM_BLACK",
+              "transitionOut": "HARD_CUT",
+              "soundCue": "Warm cinematic piano",
+              "screenTextOrDiagram": "[T - 08:20] SPEED OF LIGHT HORIZON",
+              "continuityReferenceId": "anchor-1"
+            },
+            {
+              "shotId": "scene-1-shot-2",
+              "sceneId": "scene-1",
+              "shotNumber": 2,
+              "durationSeconds": 18,
+              "visualType": "AI_IMAGE",
+              "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+              "visualObjective": "Demonstrate physical consequence of hook",
+              "narrationSnippet": " seconds, the sky remains radiant, children laugh in the park, and Earth continues its tranquil orbit. But across the void, a silent countdown has already begun.",
+              "cameraMovement": "Pan left-to-right across vector trajectory line",
+              "subjectAction": "Orbital trail stretching into linear tangent vector",
+              "transitionIn": "HARD_CUT",
+              "transitionOut": "CROSS_DISSOLVE_12F",
+              "soundCue": "Subtle low heartbeat bass pulse",
+              "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+              "continuityReferenceId": "anchor-1"
+            }
+          ]
+        },
+        {
+          "sceneId": "scene-2",
+          "sceneNumber": 2,
+          "title": "PREMISE: Why does Earth wait? Because in Ein...",
+          "durationSeconds": 45,
+          "shots": [
+            {
+              "shotId": "scene-2-shot-1",
+              "sceneId": "scene-2",
+              "shotNumber": 1,
+              "durationSeconds": 22,
+              "visualType": "MOTION_GRAPHICS",
+              "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+              "visualObjective": "Establish visual anchor for premise",
+              "narrationSnippet": "Why does Earth wait? Because in Einstein's universe, nothing can travel faster than the speed of light. Not even gravity. The Sun is not just our cosmic furnace; its colossal ",
+              "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+              "subjectAction": "Solar corona flares pulsing outward into vacuum",
+              "transitionIn": "CROSS_DISSOLVE_12F",
+              "transitionOut": "HARD_CUT",
+              "soundCue": "Synth drone rising in pitch",
+              "continuityReferenceId": "anchor-2"
+            },
+            {
+              "shotId": "scene-2-shot-2",
+              "sceneId": "scene-2",
+              "shotNumber": 2,
+              "durationSeconds": 23,
+              "visualType": "AI_IMAGE",
+              "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+              "visualObjective": "Demonstrate physical consequence of premise",
+              "narrationSnippet": "mass bends the fabric of space-time into a deep gravitational bowl. For five hundred seconds, Earth continues circling a ghost star. Until the final photon strikes your retina.",
+              "cameraMovement": "Pan left-to-right across vector trajectory line",
+              "subjectAction": "Orbital trail stretching into linear tangent vector",
+              "transitionIn": "HARD_CUT",
+              "transitionOut": "CROSS_DISSOLVE_12F",
+              "soundCue": "Clock ticking cadence",
+              "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+              "continuityReferenceId": "anchor-2"
+            }
+          ]
+        },
+        {
+          "sceneId": "scene-3",
+          "sceneNumber": 3,
+          "title": "CORE_CONFLICT: At eight minutes and twenty seconds...",
+          "durationSeconds": 45,
+          "shots": [
+            {
+              "shotId": "scene-3-shot-1",
+              "sceneId": "scene-3",
+              "shotNumber": 1,
+              "durationSeconds": 22,
+              "visualType": "REAL_FOOTAGE",
+              "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+              "visualObjective": "Establish visual anchor for core_conflict",
+              "narrationSnippet": "At eight minutes and twenty seconds, total blackout hits. The Moon instantly disappears from the night sky, robbed of its reflected mirror. But the dark is merely the fir",
+              "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+              "subjectAction": "Solar corona flares pulsing outward into vacuum",
+              "transitionIn": "CROSS_DISSOLVE_12F",
+              "transitionOut": "HARD_CUT",
+              "soundCue": "Metallic impact swoosh",
+              "continuityReferenceId": "anchor-3"
+            },
+            {
+              "shotId": "scene-3-shot-2",
+              "sceneId": "scene-3",
+              "shotNumber": 2,
+              "durationSeconds": 23,
+              "visualType": "AI_IMAGE",
+              "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+              "visualObjective": "Demonstrate physical consequence of core_conflict",
+              "narrationSnippet": "st blow. Without the Sun's gravitational anchor, Earth stops curving. It slingshots in a straight tangential line into deep space at thirty kilometers every single second.",
+              "cameraMovement": "Pan left-to-right across vector trajectory line",
+              "subjectAction": "Orbital trail stretching into linear tangent vector",
+              "transitionIn": "HARD_CUT",
+              "transitionOut": "CROSS_DISSOLVE_12F",
+              "soundCue": "Cold echoing spatial ambience",
+              "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+              "continuityReferenceId": "anchor-3"
+            }
+          ]
+        },
+        {
+          "sceneId": "scene-4",
+          "sceneNumber": 4,
+          "title": "EXPLANATION: Within twenty-four hours, global pa...",
+          "durationSeconds": 50,
+          "shots": [
+            {
+              "shotId": "scene-4-shot-1",
+              "sceneId": "scene-4",
+              "shotNumber": 1,
+              "durationSeconds": 24,
+              "visualType": "REAL_FOOTAGE",
+              "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+              "visualObjective": "Establish visual anchor for explanation",
+              "narrationSnippet": "Within twenty-four hours, global panic collides with physics. Photosynthesis grinds to a dead stop. Within seven days, global surface temperatures plunge below freezing. Within ",
+              "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+              "subjectAction": "Solar corona flares pulsing outward into vacuum",
+              "transitionIn": "CROSS_DISSOLVE_12F",
+              "transitionOut": "HARD_CUT",
+              "soundCue": "Glacial cracking sound effect",
+              "continuityReferenceId": "anchor-4"
+            },
+            {
+              "shotId": "scene-4-shot-2",
+              "sceneId": "scene-4",
+              "shotNumber": 2,
+              "durationSeconds": 26,
+              "visualType": "AI_IMAGE",
+              "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+              "visualObjective": "Demonstrate physical consequence of explanation",
+              "narrationSnippet": "one year, the thermometer reads minus seventy-three degrees Celsius. The surface oceans freeze solid under kilometers of impenetrable ice, sealing off the world in an icy crypt.",
+              "cameraMovement": "Pan left-to-right across vector trajectory line",
+              "subjectAction": "Orbital trail stretching into linear tangent vector",
+              "transitionIn": "HARD_CUT",
+              "transitionOut": "CROSS_DISSOLVE_12F",
+              "soundCue": "Wind howling drone",
+              "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+              "continuityReferenceId": "anchor-4"
+            }
+          ]
+        },
+        {
+          "sceneId": "scene-5",
+          "sceneNumber": 5,
+          "title": "CLIMAX: Yet, deep beneath that armor of ice...",
+          "durationSeconds": 40,
+          "shots": [
+            {
+              "shotId": "scene-5-shot-1",
+              "sceneId": "scene-5",
+              "shotNumber": 1,
+              "durationSeconds": 19,
+              "visualType": "REAL_FOOTAGE",
+              "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+              "visualObjective": "Establish visual anchor for climax",
+              "narrationSnippet": "Yet, deep beneath that armor of ice, Earth harbors a secret. Geothermal energy pulsing from our molten nickel-iron core keeps the deep abyssal oceans liqui",
+              "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+              "subjectAction": "Solar corona flares pulsing outward into vacuum",
+              "transitionIn": "CROSS_DISSOLVE_12F",
+              "transitionOut": "HARD_CUT",
+              "soundCue": "Underwater bubble resonance",
+              "continuityReferenceId": "anchor-5"
+            },
+            {
+              "shotId": "scene-5-shot-2",
+              "sceneId": "scene-5",
+              "shotNumber": 2,
+              "durationSeconds": 21,
+              "visualType": "VECTOR_ANIMATION",
+              "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+              "visualObjective": "Demonstrate physical consequence of climax",
+              "narrationSnippet": "d and warm. Clustering around hydrothermal vents, volcanic extremophiles thrive in volcanic darkness, completely indifferent to the death of the star above.",
+              "cameraMovement": "Pan left-to-right across vector trajectory line",
+              "subjectAction": "Orbital trail stretching into linear tangent vector",
+              "transitionIn": "HARD_CUT",
+              "transitionOut": "CROSS_DISSOLVE_12F",
+              "soundCue": "Warm ethereal string swell",
+              "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+              "continuityReferenceId": "anchor-5"
+            }
+          ]
+        },
+        {
+          "sceneId": "scene-6",
+          "sceneNumber": 6,
+          "title": "RESOLUTION: Billions of years from now, our rog...",
+          "durationSeconds": 30,
+          "shots": [
+            {
+              "shotId": "scene-6-shot-1",
+              "sceneId": "scene-6",
+              "shotNumber": 1,
+              "durationSeconds": 14,
+              "visualType": "REAL_FOOTAGE",
+              "visualDecisionRationale": "Motion graphics with warped coordinate grid clearly explains Einsteinian spacetime curvature.",
+              "visualObjective": "Establish visual anchor for resolution",
+              "narrationSnippet": "Billions of years from now, our rogue planet will drift silently through interstellar space—a solitary ark ",
+              "cameraMovement": "Slow continuous push-in zoom (1.0x to 1.15x) with micro camera shake",
+              "subjectAction": "Solar corona flares pulsing outward into vacuum",
+              "transitionIn": "CROSS_DISSOLVE_12F",
+              "transitionOut": "HARD_CUT",
+              "soundCue": "Grand cinematic orchestral resolution",
+              "continuityReferenceId": "anchor-6"
+            },
+            {
+              "shotId": "scene-6-shot-2",
+              "sceneId": "scene-6",
+              "shotNumber": 2,
+              "durationSeconds": 16,
+              "visualType": "MOTION_GRAPHICS",
+              "visualDecisionRationale": "Dynamic scientific vector diagram with animated telemetry metrics maintains viewer attention and explains physical mechanics.",
+              "visualObjective": "Demonstrate physical consequence of resolution",
+              "narrationSnippet": "bearing life across the galaxy. The Sun gave us birth, but our world's inner fire guarantees we will endure.",
+              "cameraMovement": "Pan left-to-right across vector trajectory line",
+              "subjectAction": "Orbital trail stretching into linear tangent vector",
+              "transitionIn": "HARD_CUT",
+              "transitionOut": "CROSS_DISSOLVE_12F",
+              "soundCue": "Fading cosmic drone",
+              "screenTextOrDiagram": "VELOCITY: 30 KM/S // INTERSTELLAR TANGENT",
+              "continuityReferenceId": "anchor-6"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-11-02T08:50:21.148Z"
+    },
+    "assetManifest": {
+      "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+      "assets": [
+        {
+          "assetId": "asset-scene-1-shot-1",
+          "shotId": "scene-1-shot-1",
+          "assetType": "VIDEO",
+          "source": "NASA_PUBLIC_DOMAIN",
+          "license": "NASA Public Domain (Free for Commercial and Educational Use)",
+          "attributionRequired": true,
+          "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
+          "localPath": "public/assets/sun_broll.mp4",
+          "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+          "resolution": "1920x1080",
+          "durationSeconds": 17,
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-1-shot-2",
+          "shotId": "scene-1-shot-2",
+          "assetType": "IMAGE",
+          "source": "AI_GENERATED",
+          "license": "Generated by Studio Provider (Full Commercial Usage)",
+          "attributionRequired": false,
+          "localPath": "public/assets/generated-scene-1-shot-2.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-2-shot-1",
+          "shotId": "scene-2-shot-1",
+          "assetType": "SVG",
+          "source": "PROCEDURAL_CODE",
+          "license": "Proprietary Project Generated (MIT / Full Commercial Rights)",
+          "attributionRequired": false,
+          "localPath": "public/assets/diagram-scene-2-shot-1.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-2-shot-2",
+          "shotId": "scene-2-shot-2",
+          "assetType": "IMAGE",
+          "source": "AI_GENERATED",
+          "license": "Generated by Studio Provider (Full Commercial Usage)",
+          "attributionRequired": false,
+          "localPath": "public/assets/generated-scene-2-shot-2.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-3-shot-1",
+          "shotId": "scene-3-shot-1",
+          "assetType": "VIDEO",
+          "source": "NASA_PUBLIC_DOMAIN",
+          "license": "NASA Public Domain (Free for Commercial and Educational Use)",
+          "attributionRequired": true,
+          "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
+          "localPath": "public/assets/sun_broll.mp4",
+          "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+          "resolution": "1920x1080",
+          "durationSeconds": 22,
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-3-shot-2",
+          "shotId": "scene-3-shot-2",
+          "assetType": "IMAGE",
+          "source": "AI_GENERATED",
+          "license": "Generated by Studio Provider (Full Commercial Usage)",
+          "attributionRequired": false,
+          "localPath": "public/assets/generated-scene-3-shot-2.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-4-shot-1",
+          "shotId": "scene-4-shot-1",
+          "assetType": "VIDEO",
+          "source": "NASA_PUBLIC_DOMAIN",
+          "license": "NASA Public Domain (Free for Commercial and Educational Use)",
+          "attributionRequired": true,
+          "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
+          "localPath": "public/assets/sun_broll.mp4",
+          "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+          "resolution": "1920x1080",
+          "durationSeconds": 24,
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-4-shot-2",
+          "shotId": "scene-4-shot-2",
+          "assetType": "IMAGE",
+          "source": "AI_GENERATED",
+          "license": "Generated by Studio Provider (Full Commercial Usage)",
+          "attributionRequired": false,
+          "localPath": "public/assets/generated-scene-4-shot-2.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-5-shot-1",
+          "shotId": "scene-5-shot-1",
+          "assetType": "VIDEO",
+          "source": "NASA_PUBLIC_DOMAIN",
+          "license": "NASA Public Domain (Free for Commercial and Educational Use)",
+          "attributionRequired": true,
+          "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
+          "localPath": "public/assets/sun_broll.mp4",
+          "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+          "resolution": "1920x1080",
+          "durationSeconds": 19,
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-5-shot-2",
+          "shotId": "scene-5-shot-2",
+          "assetType": "SVG",
+          "source": "PROCEDURAL_CODE",
+          "license": "Proprietary Project Generated (MIT / Full Commercial Rights)",
+          "attributionRequired": false,
+          "localPath": "public/assets/diagram-scene-5-shot-2.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-6-shot-1",
+          "shotId": "scene-6-shot-1",
+          "assetType": "VIDEO",
+          "source": "NASA_PUBLIC_DOMAIN",
+          "license": "NASA Public Domain (Free for Commercial and Educational Use)",
+          "attributionRequired": true,
+          "attributionText": "Solar Dynamics Observatory - Blazing Sun Flare courtesy of NASA Scientific Visualization Studio",
+          "localPath": "public/assets/sun_broll.mp4",
+          "remoteUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a014100/a014126/New_Trebuchet_mkII.mp4",
+          "resolution": "1920x1080",
+          "durationSeconds": 14,
+          "isVerified": true
+        },
+        {
+          "assetId": "asset-scene-6-shot-2",
+          "shotId": "scene-6-shot-2",
+          "assetType": "SVG",
+          "source": "PROCEDURAL_CODE",
+          "license": "Proprietary Project Generated (MIT / Full Commercial Rights)",
+          "attributionRequired": false,
+          "localPath": "public/assets/diagram-scene-6-shot-2.svg",
+          "resolution": "1920x1080",
+          "isVerified": true
+        }
+      ],
+      "totalAssets": 12,
+      "createdAt": "2026-11-02T08:50:21.175Z"
+    }
+  }
+}

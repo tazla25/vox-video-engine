@@ -1,0 +1,17 @@
+{
+  "projectId": "what-happens-if-the-sun-disapp-mvz0qmkx",
+  "topic": "What happens if the Sun disappears?",
+  "mode": "SCIENCE_EXPLAINER",
+  "targetDurationSeconds": 240,
+  "aspectRatio": "16:9",
+  "fps": 30,
+  "resolution": {
+    "width": 1920,
+    "height": 1080
+  },
+  "outputFormat": "mp4",
+  "createdAt": "2026-11-02T08:50:21.007Z",
+  "updatedAt": "2026-11-02T08:50:21.007Z",
+  "humanApprovalRequired": true,
+  "maxRevisionAttempts": 5
+}

@@ -20,7 +20,13 @@ DEFAULT_VOICE = "en-US-ChristopherNeural"
 
 
 async def main():
-    text = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_TEXT
+    raw_arg = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_TEXT
+    if os.path.isfile(raw_arg):
+        with open(raw_arg, "r", encoding="utf-8") as f:
+            text = f.read()
+    else:
+        text = raw_arg
+
     voice = sys.argv[2] if len(sys.argv) > 2 else DEFAULT_VOICE
 
     script_dir = os.path.dirname(os.path.abspath(__file__))
